@@ -1,4 +1,4 @@
-# Portfolio — Quentin Féret, Product Designer UX/UI
+# Portfolio — Quentin Féret, Designer UX/UI
 
 Site statique (HTML + images, sans dépendance ni étape de build) : trois cas d'étude autour du design system — SNCF Gares & Connexions, Île-de-France Mobilités, Conseil d'État — et une page À propos.
 
