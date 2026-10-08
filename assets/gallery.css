@@ -50,7 +50,7 @@
 .tile span.d{font-size:14px;color:var(--ink-2)}
 
 /* Dans la presse */
-.press{padding-top:clamp(48px,6vw,88px);border-top:1px solid var(--line);scroll-margin-top:calc(var(--hh) + 8px)}
+.press{padding-top:clamp(64px,8vw,104px);scroll-margin-top:calc(var(--hh) + 8px)}
 .press-head{display:flex;flex-direction:column;gap:12px;max-width:62ch;margin-bottom:40px}
 .press-head .k{margin:0;font-size:var(--fs-small);font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--t)}
 .press-head h2{margin:0}
