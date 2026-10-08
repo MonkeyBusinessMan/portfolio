@@ -3,221 +3,245 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Conseil d'État — Cas d'étude</title>
-<meta name="description" content="Portfolio de Quentin Féret, Designer UX/UI : trois cas d'étude autour du design system (SNCF Gares &amp; Connexions, Île-de-France Mobilités, Conseil d'État).">
-<meta property="og:title" content="Conseil d'État — Cas d'étude">
-<meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%231E36B0%22/%3E%3Ctext x=%2232%22 y=%2242%22 font-family=%22Helvetica,Arial%22 font-size=%2226%22 font-weight=%22700%22 fill=%22white%22 text-anchor=%22middle%22%3EQF%3C/text%3E%3C/svg%3E">
-<style>
-*,*::before,*::after{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-img{max-width:100%}
-body{margin:0;background:#FFFFFF}
-a{color:#1E36B0}a:hover{color:#142680}
-</style>
+<title>Conseil d'État — Cas d'étude · Quentin Féret</title>
+<meta name="description" content="Cas d'étude : refonte graphique de Télérecours pour le Conseil d'État. Un design system partagé par 5 designers, avec une documentation des composants qui intègre le RGAA.">
+<meta name="theme-color" content="#FAFAF8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%230E0F12%22/%3E%3Ctext x=%2232%22 y=%2242%22 font-family=%22Helvetica,Arial%22 font-size=%2226%22 font-weight=%22700%22 fill=%22white%22 text-anchor=%22middle%22%3EQF%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/inter-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/tokens.css">
+<link rel="stylesheet" href="assets/case.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
-<body>
-<div style="background: #FFFFFF; color: #121419; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 17px; line-height: 1.6; min-height: 100vh">
+<body class="t3">
+<a class="skip" href="#contenu">Aller au contenu</a>
 
-<header style="border-bottom: 1px solid #E3E5EA">
-<div style="max-width: 1200px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px">
-<a href="index.html" style="font-weight: 600; font-size: 18px; color: #121419; text-decoration: none">Quentin Féret <span style="font-weight: 400; color: #5A5F6B">— Designer UX/UI</span></a>
-<nav aria-label="Navigation principale" style="display: flex; gap: 28px; font-size: 15px">
-<a href="index.html" style="color: #121419; text-decoration: none">Projets</a>
-<a href="apropos.html" style="color: #121419; text-decoration: none">À propos</a>
-<a href="https://www.linkedin.com/in/quentin-feret" target="_blank" rel="noopener" style="color: #121419; text-decoration: none">Contact</a>
+<header class="site-header">
+<div class="wrap">
+<a class="brand" href="index.html"><span class="mono" aria-hidden="true">QF</span><span>Quentin Féret <small>— Designer UX/UI</small></span></a>
+<nav class="nav" aria-label="Navigation principale">
+<a href="index.html" aria-current="page">Projets</a>
+<a href="apropos.html">À propos</a>
+<a href="https://www.linkedin.com/in/quentin-feret" target="_blank" rel="noopener">Contact</a>
 </nav>
 </div>
 </header>
 
-<section id="top" style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 40px; display: flex; flex-direction: column; gap: 28px">
-<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; font-size: 13px"><span style="color: #1E36B0; font-weight: 500">Cas d'étude 03</span><span style="color: #5A5F6B">UX/UI × Design system</span></div>
-<h1 style="margin: 0; font-weight: 600; font-size: clamp(40px, 6vw, 76px); line-height: 1.04; letter-spacing: -0.02em; max-width: 960px">Conseil d'État</h1>
-<p style="margin: 0; font-size: 21px; line-height: 1.5; color: #3A3F4A; max-width: 760px">Refonte graphique générale de l'outil Télérecours.</p>
-<ul aria-label="Taxonomie du projet" style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px"><li style="padding: 6px 14px; border: 1px solid #1E36B0; border-radius: 999px; font-size: 13px; color: #1E36B0">Refonte graphique</li><li style="padding: 6px 14px; border: 1px solid #1E36B0; border-radius: 999px; font-size: 13px; color: #1E36B0">Design system</li><li style="padding: 6px 14px; border: 1px solid #1E36B0; border-radius: 999px; font-size: 13px; color: #1E36B0">Service public</li></ul>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 24px; padding-top: 28px; border-top: 1px solid #E3E5EA; margin-top: 12px"><div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 12px; color: #5A5F6B">Client</span><span style="font-weight: 500">Conseil d'État</span></div><div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 12px; color: #5A5F6B">Rôle</span><span style="font-weight: 500">Designer UX/UI</span></div><div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 12px; color: #5A5F6B">Période</span><span style="font-weight: 500">Févr. 2022 – août 2023</span></div><div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 12px; color: #5A5F6B">Équipe</span><span style="font-weight: 500">CGI et la Direction des systèmes d'information du Conseil d'État</span></div><div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 12px; color: #5A5F6B">Outils</span><span style="font-weight: 500">Figma</span></div></div>
+<main id="contenu">
+
+<!-- 1. EN-TÊTE -->
+<section class="ch" aria-labelledby="h1">
+<div class="wrap">
+<p class="crumb"><a href="index.html">Projets</a> / Cas d'étude 03</p>
+<div class="ch-top">
+<div>
+<p class="eyebrow" style="margin-bottom:16px">UX/UI × Design system</p>
+<h1 class="display" id="h1">Conseil d'État</h1>
+<p class="lead">Synchroniser 5 designers autour d'un design system commun, et intégrer l'accessibilité dès la conception pour la refonte graphique de Télérecours.</p>
+<ul class="tags"><li>Refonte graphique</li><li>Design system</li><li>Service public</li></ul>
+</div>
+<aside class="kpi-hero" aria-label="Chiffre clé">
+<span class="label">Périmètre</span>
+<span class="big num sm">5&nbsp;outils<br>5&nbsp;designers</span>
+<p>Les designers des outils de Télérecours, synchronisés autour d'un design system commun.</p>
+</aside>
+</div>
+<dl class="meta">
+<div><dt>Client</dt><dd>Conseil d'État</dd></div>
+<div><dt>Rôle</dt><dd>Designer UX/UI</dd></div>
+<div><dt>Période</dt><dd>Févr. 2022 – août 2023</dd></div>
+<div><dt>Équipe</dt><dd>CGI et la DSI du Conseil d'État</dd></div>
+<div><dt>Outils</dt><dd>Figma</dd></div>
+</dl>
+<div class="cover"><img src="assets/index-03.jpg" alt="Design system UI Kit V2.0 des services de Télérecours du Conseil d'État : boutons, liste déroulante, cases à cocher, champs de saisie, calendrier, dépôt de fichiers." width="2400" height="1350"></div>
+</div>
 </section>
 
-<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px"><img src="assets/index-03.jpg" alt="Design system UI Kit V2.0 des services de Télérecours du Conseil d'État : aperçu des composants (boutons, liste déroulante, cases à cocher, boutons radio, champs de saisie, calendrier, dépôt de fichiers)" style="width: 100%; height: auto; display: block; border-radius: 16px"></div>
-
-<nav aria-label="Sommaire du cas d'étude" style="max-width: 1200px; margin: 0 auto; padding: 40px 24px 8px"><div style="display: flex; flex-wrap: wrap; gap: 10px"><a href="#contexte" style="padding: 10px 16px; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 14px; color: #121419; text-decoration: none">01 Contexte</a><a href="#perimetre" style="padding: 10px 16px; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 14px; color: #121419; text-decoration: none">02 Périmètre</a><a href="#constat" style="padding: 10px 16px; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 14px; color: #121419; text-decoration: none">03 Constat</a><a href="#problemes" style="padding: 10px 16px; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 14px; color: #121419; text-decoration: none">04 Problèmes</a><a href="#enjeux" style="padding: 10px 16px; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 14px; color: #121419; text-decoration: none">05 Enjeux</a><a href="#solution" style="padding: 10px 16px; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 14px; color: #121419; text-decoration: none">06 Solution</a><a href="#objectifs" style="padding: 10px 16px; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 14px; color: #121419; text-decoration: none">07 Objectifs</a><a href="#travail" style="padding: 10px 16px; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 14px; color: #121419; text-decoration: none">08 Travail effectué</a><a href="#resultats" style="padding: 10px 16px; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 14px; color: #121419; text-decoration: none">09 Ce qui a été mis en place</a><a href="cas03-realisations.html" style="padding: 10px 16px; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 14px; color: #121419; text-decoration: none">10 Réalisations</a></div></nav>
-
-<main style="max-width: 1200px; margin: 0 auto; padding: 0 24px 40px">
-<section id="contexte" style="display: flex; flex-wrap: wrap; gap: 40px; padding: 40px 0; border-top: 1px solid #E3E5EA">
-<div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 8px">
-<span style="font-size: 14px; color: #1E36B0">01</span>
-<h2 style="margin: 0; font-weight: 600; font-size: 34px; line-height: 1.1">Contexte</h2>
-</div>
-<div style="flex: 3 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<p style="margin: 0; font-size: 20px; line-height: 1.55">L'outil Télérecours a fait l'objet d'une refonte graphique. À cette occasion, une recherche utilisateur a été lancée pour améliorer les fonctionnalités existantes. Chaque produit avait son designer, chargé d'en concevoir l'interface.</p>
-<p style="margin: 0; color: #3A3F4A">Mon rôle : accompagner chaque designer, synchroniser les évolutions entre les produits, les centraliser dans une librairie et les partager avec l'ensemble des designers.</p>
-<figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
-<div style="padding: 24px; background: #EEF1FA; border-radius: 16px">
-<img loading="lazy" decoding="async" src="assets/cas03-01.jpg" alt="Avant / après de Télérecours : l'ancienne liste des requêtes, dense et datée, puis le nouveau Portail contentieux avec onglets, filtres par statut et tableau aéré" style="width: 100%; height: auto; display: block; border-radius: 10px">
-</div>
-<figcaption style="display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; color: #1E36B0">Avant / après · Liste des requêtes</span><span style="color: #3A3F4A">De l'ancien Télérecours au nouveau Portail contentieux : la même liste de requêtes, refondue graphiquement.</span></figcaption>
-</figure>
-</div>
-</section>
-<section id="perimetre" style="display: flex; flex-wrap: wrap; gap: 40px; padding: 40px 0; border-top: 1px solid #E3E5EA">
-<div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 8px">
-<span style="font-size: 14px; color: #1E36B0">02</span>
-<h2 style="margin: 0; font-weight: 600; font-size: 34px; line-height: 1.1">Périmètre</h2>
-</div>
-<div style="flex: 3 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<p style="margin: 0; font-size: 13px; color: #5A5F6B">Les <strong style="color: #121419">5 outils</strong> de Télérecours du Conseil d'État</p>
-<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px"><li style="padding: 24px; background: #F6F7F9; border-radius: 12px; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 13px; color: #1E36B0">01 · Refonte</span><h3 style="margin: 0; font-size: 20px; font-weight: 600; line-height: 1.3">Télérecours citoyens</h3><p style="margin: 0; color: #3A3F4A">Une application plus accessible et plus ergonomique.</p></li><li style="padding: 24px; background: #F6F7F9; border-radius: 12px; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 13px; color: #1E36B0">02 · Refonte</span><h3 style="margin: 0; font-size: 20px; font-weight: 600; line-height: 1.3">Télérecours avocats</h3><p style="margin: 0; color: #3A3F4A">Une refonte en adéquation avec les nouveaux usages.</p></li><li style="padding: 24px; background: #F6F7F9; border-radius: 12px; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 13px; color: #1E36B0">03 · Conception</span><h3 style="margin: 0; font-size: 20px; font-weight: 600; line-height: 1.3">Télérecours administrations</h3><p style="margin: 0; color: #3A3F4A">Un Télérecours à destination des administrations.</p></li><li style="padding: 24px; background: #F6F7F9; border-radius: 12px; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 13px; color: #1E36B0">04 · Refonte et fusion</span><h3 style="margin: 0; font-size: 20px; font-weight: 600; line-height: 1.3">Portail contentieux</h3><p style="margin: 0; color: #3A3F4A">Les outils Skipper et Télérecours réunis en une seule et même application.</p></li><li style="padding: 24px; background: #F6F7F9; border-radius: 12px; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 13px; color: #1E36B0">05 · Conception</span><h3 style="margin: 0; font-size: 20px; font-weight: 600; line-height: 1.3">Annuaire des magistrats</h3><p style="margin: 0; color: #3A3F4A">Un annuaire à destination des magistrats.</p></li></ul>
-<figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
-<div style="padding: 24px; background: #EEF1FA; border-radius: 16px">
-<img loading="lazy" decoding="async" src="assets/cas03-02.jpg" alt="La liste des requêtes dans quatre outils : Portail contentieux (POCO), Télérecours administrations (TR-ADM), Télérecours avocats (TR-AVO) et Télérecours citoyens (TRC), chacun avec une architecture d'information différente" style="width: 100%; height: auto; display: block; border-radius: 10px">
-</div>
-<figcaption style="display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; color: #1E36B0">Une fonctionnalité, quatre architectures</span><span style="color: #3A3F4A">La liste des requêtes varie selon les besoins des chefs de projet et des utilisateurs de chaque outil : POCO (Portail contentieux), TR-ADM (Télérecours administrations), TR-AVO (Télérecours avocats) et TRC (Télérecours citoyens).</span></figcaption>
-</figure>
-</div>
-</section>
-<section id="constat" style="display: flex; flex-wrap: wrap; gap: 40px; padding: 40px 0; border-top: 1px solid #E3E5EA">
-<div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 8px">
-<span style="font-size: 14px; color: #1E36B0">03</span>
-<h2 style="margin: 0; font-weight: 600; font-size: 34px; line-height: 1.1">Constat</h2>
-</div>
-<div style="flex: 3 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<p style="margin: 0; font-size: 20px; line-height: 1.55">À mon arrivée sur la mission, une base déjà solide, avec deux points à faire progresser.</p>
-<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px"><li style="padding: 24px; border: 1px solid #E3E5EA; border-radius: 12px; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 13px; color: #0F6B5C; font-weight: 500">01 · Acquis</span><h3 style="margin: 0; font-size: 19px; font-weight: 600; line-height: 1.3">Une équipe déjà organisée</h3><p style="margin: 0; color: #3A3F4A; font-size: 15px">La structure des fichiers et l'organisation des dossiers sont bien pensées.</p></li><li style="padding: 24px; border: 1px solid #E3E5EA; border-radius: 12px; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 13px; color: #1E36B0; font-weight: 500">02 · À rattraper</span><h3 style="margin: 0; font-size: 19px; font-weight: 600; line-height: 1.3">Des évolutions en retard dans la librairie</h3><p style="margin: 0; color: #3A3F4A; font-size: 15px">Quelques évolutions restent à intégrer dans la librairie Figma.</p></li><li style="padding: 24px; border: 1px solid #E3E5EA; border-radius: 12px; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 13px; color: #1E36B0; font-weight: 500">03 · À améliorer</span><h3 style="margin: 0; font-size: 19px; font-weight: 600; line-height: 1.3">Un design system solide, une documentation à enrichir</h3><p style="margin: 0; color: #3A3F4A; font-size: 15px">Le design system existant est de très bonne qualité ; seule sa documentation est à améliorer.</p></li></ul>
-</div>
-</section>
-<section id="problemes" style="display: flex; flex-wrap: wrap; gap: 40px; padding: 40px 0; border-top: 1px solid #E3E5EA">
-<div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 8px">
-<span style="font-size: 14px; color: #1E36B0">04</span>
-<h2 style="margin: 0; font-weight: 600; font-size: 34px; line-height: 1.1">Problèmes identifiés</h2>
-</div>
-<div style="flex: 3 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column"><li style="display: flex; gap: 24px; padding: 16px 0; border-bottom: 1px solid #E3E5EA"><span style="font-size: 14px; color: #5A5F6B; padding-top: 4px">P1</span><div style="display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-size: 22px; font-weight: 600">Un fichier de livraison à améliorer</h3><p style="margin: 0; color: #3A3F4A">Le fichier Ready to Dev ne donnait pas encore aux développeurs toutes les informations nécessaires pour implémenter les maquettes.</p></div></li><li style="display: flex; gap: 24px; padding: 16px 0; border-bottom: 1px solid #E3E5EA"><span style="font-size: 14px; color: #5A5F6B; padding-top: 4px">P2</span><div style="display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-size: 22px; font-weight: 600">Des règles fonctionnelles et d'accessibilité absentes du design system</h3><p style="margin: 0; color: #3A3F4A">Les attributs et rôles HTML, ainsi que les recommandations du RGAA, n'étaient pas intégrés aux composants.</p></div></li></ol>
-</div>
-</section>
-<section id="enjeux" style="display: flex; flex-wrap: wrap; gap: 40px; padding: 40px 0; border-top: 1px solid #E3E5EA">
-<div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 8px">
-<span style="font-size: 14px; color: #1E36B0">05</span>
-<h2 style="margin: 0; font-weight: 600; font-size: 34px; line-height: 1.1">Enjeux</h2>
-</div>
-<div style="flex: 3 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<div style="padding: 32px 28px; border-top: 3px solid #1E36B0; background: #F6F7F9; display: flex; flex-direction: column; gap: 10px">
-<span style="font-size: 13px; color: #1E36B0">Un enjeu principal</span>
-<p style="margin: 0; font-size: 28px; line-height: 1.3; font-weight: 500; color: #121419">Une production la plus réaliste possible, alignée avec les développeurs.</p>
-</div>
-</div>
-</section>
-<section id="solution" style="display: flex; flex-wrap: wrap; gap: 40px; padding: 40px 0; border-top: 1px solid #E3E5EA">
-<div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 8px">
-<span style="font-size: 14px; color: #1E36B0">06</span>
-<h2 style="margin: 0; font-weight: 600; font-size: 34px; line-height: 1.1">Solution</h2>
-</div>
-<div style="flex: 3 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<p style="margin: 0; font-size: 28px; line-height: 1.3; font-weight: 500">Faire valider chaque nouvelle fonctionnalité par le design et la technique, avant même le refinement.</p>
-<ul style="margin: 0; padding-left: 18px; color: #3A3F4A; display: flex; flex-direction: column; gap: 6px">
-<li>Intégrer une <strong style="color: #121419">design review</strong> et une <strong style="color: #121419">tech review</strong> pour évaluer la faisabilité des nouvelles fonctionnalités.</li>
-<li>Partager les fonctionnalités <strong style="color: #121419">en amont du refinement</strong> pour échanger avec les développeurs.</li>
-<li>S'appuyer sur la documentation du <strong style="color: #121419">Système de design de l'État</strong> et sur celle des environnements web (<strong style="color: #121419">MDN, Mozilla</strong>) pour rédiger les recommandations RGAA.</li>
+<nav class="snav" aria-label="Sommaire du cas">
+<ul>
+<li><a href="#tldr"><b>01</b>En bref</a></li>
+<li><a href="#contexte"><b>02</b>Contexte &amp; enjeu</a></li>
+<li><a href="#demarche"><b>03</b>Démarche</a></li>
+<li><a href="#decisions"><b>04</b>Décisions clés</a></li>
+<li><a href="#realisations"><b>05</b>Réalisations</a></li>
+<li><a href="#resultats"><b>06</b>Ce qui a été mis en place</a></li>
 </ul>
-<figure style="margin: 0; background: #EEF1FA; border-radius: 16px; overflow-x: auto" aria-label="Schéma du circuit d'une nouvelle fonctionnalité : concevoir, design review, tech review, partage avant refinement, puis refinement et développement. Les étapes de review s'appuient sur la documentation du Système de design de l'État et de MDN Web Docs pour les recommandations RGAA."><div style="min-width: 760px; box-sizing: border-box; padding: 28px 24px; display: flex; flex-direction: column; gap: 20px">
-<p style="margin: 0; font-size: 16px; color: #3A3F4A"><strong style="color: #121419">Le circuit d'une nouvelle fonctionnalité</strong> — trois étapes ajoutées avant le développement</p>
-<div style="display: grid; grid-template-columns: minmax(0, 1fr) 24px minmax(0, 1fr) 24px minmax(0, 1fr) 24px minmax(0, 1fr) 24px minmax(0, 1fr); row-gap: 0; align-items: stretch">
-<div style="box-sizing: border-box; height: 100%; padding: 14px 12px; background: #FFFFFF; border: 1px solid #D6D9E0; border-radius: 12px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; color: #5A5F6B">01</span>
-<span style="font-size: 15px; font-weight: 600; line-height: 1.25; color: #121419">Concevoir</span>
-<span style="font-size: 13px; line-height: 1.4; color: #3A3F4A">Le designer conçoit la fonctionnalité</span>
-</div>
-<div style="display: flex; align-items: center">
-<div style="flex-grow: 1; height: 2px; background: #121419"></div>
-<div style="width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 7px solid #121419"></div>
-</div>
-<div style="box-sizing: border-box; height: 100%; padding: 14px 12px; background: #FFFFFF; border: 1px solid #1E36B0; border-radius: 12px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; color: #5A5F6B">02</span>
-<span style="font-size: 15px; font-weight: 600; line-height: 1.25; color: #121419">Design review</span>
-<span style="align-self: flex-start; padding: 2px 8px; background: #1E36B0; color: #FFFFFF; border-radius: 999px; font-size: 11px; font-weight: 600">Ajouté</span><span style="font-size: 13px; line-height: 1.4; color: #3A3F4A">Cohérence avec le design system et règles d'accessibilité</span>
-</div>
-<div style="display: flex; align-items: center">
-<div style="flex-grow: 1; height: 2px; background: #121419"></div>
-<div style="width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 7px solid #121419"></div>
-</div>
-<div style="box-sizing: border-box; height: 100%; padding: 14px 12px; background: #FFFFFF; border: 1px solid #1E36B0; border-radius: 12px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; color: #5A5F6B">03</span>
-<span style="font-size: 15px; font-weight: 600; line-height: 1.25; color: #121419">Tech review</span>
-<span style="align-self: flex-start; padding: 2px 8px; background: #1E36B0; color: #FFFFFF; border-radius: 999px; font-size: 11px; font-weight: 600">Ajouté</span><span style="font-size: 13px; line-height: 1.4; color: #3A3F4A">Évaluation de la faisabilité</span>
-</div>
-<div style="display: flex; align-items: center">
-<div style="flex-grow: 1; height: 2px; background: #121419"></div>
-<div style="width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 7px solid #121419"></div>
-</div>
-<div style="box-sizing: border-box; height: 100%; padding: 14px 12px; background: #FFFFFF; border: 1px solid #1E36B0; border-radius: 12px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; color: #5A5F6B">04</span>
-<span style="font-size: 15px; font-weight: 600; line-height: 1.25; color: #121419">Partage avant refinement</span>
-<span style="align-self: flex-start; padding: 2px 8px; background: #1E36B0; color: #FFFFFF; border-radius: 999px; font-size: 11px; font-weight: 600">Ajouté</span><span style="font-size: 13px; line-height: 1.4; color: #3A3F4A">Échanges en amont avec les développeurs</span>
-</div>
-<div style="display: flex; align-items: center">
-<div style="flex-grow: 1; height: 2px; background: #121419"></div>
-<div style="width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 7px solid #121419"></div>
-</div>
-<div style="box-sizing: border-box; height: 100%; padding: 14px 12px; background: #FFFFFF; border: 1px solid #D6D9E0; border-radius: 12px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; color: #5A5F6B">05</span>
-<span style="font-size: 15px; font-weight: 600; line-height: 1.25; color: #121419">Refinement et développement</span>
-<span style="font-size: 13px; line-height: 1.4; color: #3A3F4A">Une fonctionnalité déjà discutée et réaliste</span>
-</div>
-<div style="grid-column: 3 / 6; display: flex; flex-direction: column; align-items: center; gap: 0">
-<div style="width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 8px solid #1E36B0"></div>
-<div style="width: 2px; height: 14px; background: #1E36B0"></div>
-<div style="box-sizing: border-box; width: 100%; padding: 14px; background: #1E36B0; color: #FFFFFF; border-radius: 12px; display: flex; flex-direction: column; gap: 4px">
-<span style="font-size: 12px; color: #DCE1F5">Sources des recommandations RGAA</span>
-<span style="font-size: 14px; font-weight: 600; line-height: 1.35">Système de design de l'État (DSFR) · MDN Web Docs (Mozilla)</span>
-</div>
-</div>
-</div>
-</div></figure>
-</div>
-</section>
-<section id="objectifs" style="display: flex; flex-wrap: wrap; gap: 40px; padding: 40px 0; border-top: 1px solid #E3E5EA">
-<div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 8px">
-<span style="font-size: 14px; color: #1E36B0">07</span>
-<h2 style="margin: 0; font-weight: 600; font-size: 34px; line-height: 1.1">Objectifs</h2>
-</div>
-<div style="flex: 3 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px"><li style="padding: 24px; background: #F6F7F9; border-radius: 12px; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 13px; color: #1E36B0">Objectif 1</span><h3 style="margin: 0; font-size: 20px; font-weight: 600; line-height: 1.3">Alléger la livraison aux développeurs</h3><p style="margin: 0; color: #3A3F4A">Réduire l'effort nécessaire pour transmettre les documents aux développeurs (design handoff).</p></li><li style="padding: 24px; background: #F6F7F9; border-radius: 12px; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 13px; color: #1E36B0">Objectif 2</span><h3 style="margin: 0; font-size: 20px; font-weight: 600; line-height: 1.3">Intégrer l'accessibilité dès la conception</h3><p style="margin: 0; color: #3A3F4A">Concevoir en tenant compte de l'accessibilité dès les premières maquettes, et non après coup.</p></li></ul>
-</div>
-</section>
-<section id="travail" style="display: flex; flex-wrap: wrap; gap: 40px; padding: 40px 0; border-top: 1px solid #E3E5EA">
-<div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 8px">
-<span style="font-size: 14px; color: #1E36B0">08</span>
-<h2 style="margin: 0; font-weight: 600; font-size: 34px; line-height: 1.1">Travail effectué</h2>
-</div>
-<div style="flex: 3 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
-<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column"><li style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 14px 0; border-bottom: 1px solid #E3E5EA"><h3 style="flex: 0 0 200px; margin: 0; font-size: 15px; font-weight: 600; line-height: 1.5; color: #1E36B0">Process de travail</h3><ul style="flex: 1 1 280px; margin: 0; padding-left: 18px; color: #3A3F4A; display: flex; flex-direction: column; gap: 6px"><li>Un process en 5 étapes pour intégrer les composants au design system : prioriser selon la feuille de route, inventorier à partir des fichiers de conception de chaque outil (TR-AVO, TR-ADM, POCO, TRC), documenter à partir du Système de design de l'État, homogénéiser avec les fondamentaux, puis déployer.</li></ul></li><li style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 14px 0; border-bottom: 1px solid #E3E5EA"><h3 style="flex: 0 0 200px; margin: 0; font-size: 15px; font-weight: 600; line-height: 1.5; color: #1E36B0">Documentation des composants</h3><ul style="flex: 1 1 280px; margin: 0; padding-left: 18px; color: #3A3F4A; display: flex; flex-direction: column; gap: 6px"><li>Chaque composant est documenté avec ses états, ses interactions au clavier, les éléments, rôles et attributs HTML à utiliser, et les critères d'accessibilité RGAA à vérifier.</li></ul></li></ol>
-<figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
-<div style="padding: 24px; background: #EEF1FA; border-radius: 16px">
-<img loading="lazy" decoding="async" src="assets/cas03-03.png" alt="Processus de travail sur le design system en cinq étapes : prioriser depuis la feuille de route, inventorier à partir des fichiers de conception TRAVO, TRADM, POCO et TRC, documenter depuis le Système de design de l'État, homogénéiser avec les fondamentaux puis les composants, déployer en publiant et en partageant" style="width: 100%; height: auto; display: block; border-radius: 10px">
-</div>
-<figcaption style="display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; color: #1E36B0">Process · Design system en 5 étapes</span><span style="color: #3A3F4A">De la feuille de route au déploiement de la librairie, en s'appuyant sur les fichiers de conception de chaque outil.</span></figcaption>
-</figure>
-</div>
-</section>
-<section id="resultats" style="display: flex; flex-wrap: wrap; gap: 40px; padding: 40px 0; border-top: 1px solid #E3E5EA">
-<div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 8px">
-<span style="font-size: 14px; color: #1E36B0">09</span>
-<h2 style="margin: 0; font-weight: 600; font-size: 34px; line-height: 1.1">Ce qui a été mis en place</h2>
-</div>
-<div style="flex: 3 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<p style="margin: 0; font-size: 20px; line-height: 1.55">À l'issue de la mission, trois pratiques sont en place pour une production plus réaliste et alignée avec les développeurs.</p>
-<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px"><li style="padding: 24px; background: #142680; color: #FFFFFF; border-radius: 12px; display: flex; flex-direction: column; gap: 12px"><span style="font-size: 13px; color: #D3D6DD">01</span><span style="font-size: 20px; font-weight: 500; line-height: 1.3">Un circuit de validation avant le développement</span><span style="font-size: 15px; color: #D3D6DD">Design review, tech review et partage des fonctionnalités en amont du refinement.</span></li><li style="padding: 24px; background: #142680; color: #FFFFFF; border-radius: 12px; display: flex; flex-direction: column; gap: 12px"><span style="font-size: 13px; color: #D3D6DD">02</span><span style="font-size: 20px; font-weight: 500; line-height: 1.3">Une documentation qui intègre l'accessibilité</span><span style="font-size: 15px; color: #D3D6DD">Les règles HTML (éléments, rôles, attributs) et les recommandations RGAA dans la documentation des composants.</span></li><li style="padding: 24px; background: #142680; color: #FFFFFF; border-radius: 12px; display: flex; flex-direction: column; gap: 12px"><span style="font-size: 13px; color: #D3D6DD">03</span><span style="font-size: 20px; font-weight: 500; line-height: 1.3">Un process commun aux designers</span><span style="font-size: 15px; color: #D3D6DD">Un process de travail en 5 étapes, partagé par les designers des 5 outils.</span></li></ul>
+</nav>
+
+<div class="wrap">
+
+<!-- 2. TL;DR -->
+<section class="sec" id="tldr" aria-labelledby="h-tldr" style="padding-top:64px">
+<div class="sec-head"><p class="k">En bref</p><h2 class="title" id="h-tldr">Le problème, ma décision, l'effet.</h2></div>
+<div class="tldr reveal">
+<div><h3>Problème</h3><p>Un fichier de livraison incomplet, et des règles HTML et d'accessibilité absentes du design system.</p></div>
+<div><h3>Décision</h3><p>Un circuit de validation avant le développement, et une documentation des composants qui intègre le RGAA.</p></div>
+<div><h3>Effet</h3><p>Une production plus réaliste, alignée avec les développeurs, et un process en 5 étapes partagé par 5 outils.</p></div>
 </div>
 </section>
 
+<!-- 3. CONTEXTE & ENJEU -->
+<section class="sec" id="contexte" aria-labelledby="h-ctx">
+<div class="sec-head"><p class="k">Contexte &amp; enjeu</p><h2 class="title" id="h-ctx">Un produit par designer, un seul système à partager.</h2></div>
+<div class="prose reveal">
+<p>L'outil Télérecours a fait l'objet d'une refonte graphique. À cette occasion, une recherche utilisateur a été lancée pour améliorer les fonctionnalités existantes. Chaque produit avait son designer, chargé d'en concevoir l'interface.</p>
+<p><strong style="color:var(--ink)">Mon rôle :</strong> accompagner chaque designer, synchroniser les évolutions entre les produits, les centraliser dans une librairie et les partager avec l'ensemble des designers.</p>
+</div>
+<figure class="fig reveal">
+<div class="img"><img src="assets/cas03-01.jpg" alt="Avant / après de Télérecours : l'ancienne liste des requêtes, puis le nouveau Portail contentieux avec onglets, filtres par statut et tableau aéré." loading="lazy" decoding="async"></div>
+<figcaption><h4>Avant / après · Liste des requêtes</h4><p>De l'ancien Télérecours au nouveau Portail contentieux : la même liste de requêtes, refondue graphiquement.</p></figcaption>
+</figure>
+
+<h3 class="sub">Périmètre — les 5 outils de Télérecours</h3>
+<div class="scope reveal">
+<div class="card"><h4>Télérecours citoyens</h4><ul><li>Refonte · une application plus accessible et plus ergonomique</li></ul></div>
+<div class="card"><h4>Télérecours avocats</h4><ul><li>Refonte · en adéquation avec les nouveaux usages</li></ul></div>
+<div class="card"><h4>Télérecours administrations</h4><ul><li>Conception · un Télérecours à destination des administrations</li></ul></div>
+<div class="card"><h4>Portail contentieux</h4><ul><li>Refonte et fusion · deux outils réunis en une seule application</li></ul></div>
+<div class="card"><h4>Annuaire des magistrats</h4><ul><li>Conception · un annuaire à destination des magistrats</li></ul></div>
+</div>
+<figure class="fig reveal">
+<div class="img"><img src="assets/cas03-02.jpg" alt="La liste des requêtes dans quatre outils : POCO, TR-ADM, TR-AVO et TRC, chacun avec une architecture d'information différente." loading="lazy" decoding="async"></div>
+<figcaption><h4>Une fonctionnalité, quatre architectures</h4><p>La liste des requêtes varie selon les besoins des chefs de projet et des utilisateurs de chaque outil : POCO, TR-ADM, TR-AVO et TRC.</p></figcaption>
+</figure>
+
+<h3 class="sub">Constat — une base déjà solide</h3>
+<div class="pb reveal">
+<div class="card"><span class="id">01 · ACQUIS</span><h4>Une équipe déjà organisée</h4><p>La structure des fichiers et l'organisation des dossiers sont bien pensées.</p></div>
+<div class="card"><span class="id">02 · À RATTRAPER</span><h4>Des évolutions en retard dans la librairie</h4><p>Quelques évolutions restent à intégrer dans la librairie Figma.</p></div>
+<div class="card"><span class="id">03 · À AMÉLIORER</span><h4>Un design system solide, une documentation à enrichir</h4><p>Le design system existant est de très bonne qualité ; seule sa documentation est à améliorer.</p></div>
+</div>
+
+<h3 class="sub">Problèmes identifiés</h3>
+<div class="pb n2 reveal">
+<div class="card"><span class="id">P1 · LIVRAISON</span><h4>Un fichier de livraison à améliorer</h4><p>Le fichier Ready to Dev ne donnait pas encore aux développeurs toutes les informations nécessaires pour implémenter les maquettes.</p></div>
+<div class="card"><span class="id">P2 · ACCESSIBILITÉ</span><h4>Des règles fonctionnelles et d'accessibilité absentes</h4><p>Les attributs et rôles HTML, ainsi que les recommandations du RGAA, n'étaient pas intégrés aux composants.</p></div>
+</div>
+
+<h3 class="sub">Enjeu principal</h3>
+<p class="callout wide reveal" style="margin-top:0">Une production la plus réaliste possible, alignée avec les développeurs.</p>
+</section>
+
+<!-- 4. DÉMARCHE -->
+<section class="sec" id="demarche" aria-labelledby="h-dem">
+<div class="sec-head"><p class="k">Démarche</p><h2 class="title" id="h-dem">Valider avant de développer.</h2>
+<p class="lead">Faire valider chaque nouvelle fonctionnalité par le design et la technique, avant même le refinement.</p></div>
+<h3 class="sub" style="margin-top:0">Le circuit d'une nouvelle fonctionnalité — trois étapes ajoutées avant le développement</h3>
+<ol class="steps sprint reveal">
+<li><h4>Concevoir</h4><p>Le designer conçoit la fonctionnalité.</p></li>
+<li class="new"><h4>Design review</h4><span class="badge">Ajouté</span><p>Cohérence avec le design system et règles d'accessibilité.</p></li>
+<li class="new"><h4>Tech review</h4><span class="badge">Ajouté</span><p>Évaluation de la faisabilité.</p></li>
+<li class="new"><h4>Partage avant refinement</h4><span class="badge">Ajouté</span><p>Échanges en amont avec les développeurs.</p></li>
+<li><h4>Refinement et développement</h4><p>Une fonctionnalité déjà discutée et réaliste.</p></li>
+</ol>
+<p class="srcs"><b>Sources des recommandations RGAA</b> · Système de design de l'État (DSFR) · MDN Web Docs (Mozilla)</p>
+
+<h3 class="sub">Un process en 5 étapes pour intégrer un composant au design system</h3>
+<ol class="steps reveal">
+<li><h4>Prioriser</h4><p>Selon la feuille de route.</p></li>
+<li><h4>Inventorier</h4><p>À partir des fichiers de conception de chaque outil (TR-AVO, TR-ADM, POCO, TRC).</p></li>
+<li><h4>Documenter</h4><p>À partir du Système de design de l'État.</p></li>
+<li><h4>Homogénéiser</h4><p>Avec les fondamentaux.</p></li>
+<li><h4>Déployer</h4><p>Publier et partager la librairie.</p></li>
+</ol>
+<figure class="fig reveal" style="margin-top:48px">
+<div class="img"><img src="assets/cas03-03.png" alt="Processus de travail sur le design system en cinq étapes : prioriser, inventorier, documenter, homogénéiser, déployer." loading="lazy" decoding="async"></div>
+<figcaption><h4>Process · Design system en 5 étapes</h4><p>De la feuille de route au déploiement de la librairie, en s'appuyant sur les fichiers de conception de chaque outil.</p></figcaption>
+</figure>
+
+<h3 class="sub">Objectifs</h3>
+<div class="pb n2 reveal">
+<div class="card"><span class="id">OBJECTIF 1</span><h4>Alléger la livraison aux développeurs</h4><p>Réduire l'effort nécessaire pour transmettre les documents aux développeurs (design handoff).</p></div>
+<div class="card"><span class="id">OBJECTIF 2</span><h4>Intégrer l'accessibilité dès la conception</h4><p>Concevoir en tenant compte de l'accessibilité dès les premières maquettes, et non après coup.</p></div>
+</div>
+
+<div class="vol n4 reveal" role="group" aria-label="Volumétrie du design system" style="margin-top:48px">
+<div><span class="num">1</span><p>design system à gérer</p></div>
+<div><span class="num">21</span><p>composants atomes</p></div>
+<div><span class="num">26</span><p>composants molécules</p></div>
+<div><span class="num">Oui</span><p>design tokens · colorimétrie</p></div>
+</div>
+</section>
+
+<!-- 5. DÉCISIONS CLÉS -->
+<section class="sec" id="decisions" aria-labelledby="h-dec">
+<div class="sec-head"><p class="k">Décisions clés</p><h2 class="title" id="h-dec">Trois décisions pour aligner design et développement.</h2>
+<p class="lead">Chaque décision répond à un problème précis et se traduit par une pratique en place à l'issue de la mission.</p></div>
+<div class="decs n3">
+<article class="dec reveal"><header><b>D1</b><h3>Un circuit de validation avant le développement</h3></header>
+<dl>
+<div><dt>Constat</dt><dd>Un fichier Ready to Dev qui ne donnait pas aux développeurs toutes les informations nécessaires.</dd></div>
+<div><dt>Décision</dt><dd>Ajouter une design review et une tech review, et partager les fonctionnalités en amont du refinement pour échanger avec les développeurs.</dd></div>
+<div><dt>Effet</dt><dd class="eff"><span>3 étapes ajoutées</span>une fonctionnalité déjà discutée et réaliste avant le développement.</dd></div>
+</dl></article>
+<article class="dec reveal" data-d="1"><header><b>D2</b><h3>Une documentation qui intègre l'accessibilité</h3></header>
+<dl>
+<div><dt>Constat</dt><dd>Les attributs, rôles HTML et recommandations du RGAA n'étaient pas intégrés aux composants.</dd></div>
+<div><dt>Décision</dt><dd>Documenter chaque composant : états, interactions au clavier, éléments, rôles et attributs HTML, critères RGAA à vérifier, en s'appuyant sur le DSFR et MDN.</dd></div>
+<div><dt>Effet</dt><dd class="eff"><span>RGAA intégré</span>les règles HTML et les recommandations RGAA figurent dans la documentation des composants.</dd></div>
+</dl></article>
+<article class="dec reveal"><header><b>D3</b><h3>Un process commun à tous les designers</h3></header>
+<dl>
+<div><dt>Constat</dt><dd>Un produit, un designer : des évolutions en retard dans la librairie et une documentation à enrichir.</dd></div>
+<div><dt>Décision</dt><dd>Un process de travail en 5 étapes, de la feuille de route au déploiement, pour intégrer chaque composant au design system.</dd></div>
+<div><dt>Effet</dt><dd class="eff"><span>5 designers</span>synchronisés autour d'un design system commun, sur les 5 outils.</dd></div>
+</dl></article>
+</div>
+</section>
+
+<!-- 6. RÉALISATIONS -->
+<section class="sec" id="realisations" aria-labelledby="h-real">
+<div class="sec-head"><p class="k">Réalisations</p><h2 class="title" id="h-real">La documentation et la livraison, concrètement.</h2>
+<p class="lead">Un composant documenté avec ses critères RGAA, et le fichier de livraison aux développeurs.</p></div>
+<div class="shots">
+<figure class="shot reveal"><img src="assets/cas03-realisations-01.jpg" alt="Documentation du composant bouton sans libellé : interactions clavier, éléments et rôles HTML, critères RGAA." loading="lazy" decoding="async"><figcaption>Documentation d'un composant · Bouton sans libellé <span>Clavier, HTML, RGAA</span></figcaption></figure>
+<figure class="shot reveal"><img src="assets/cas03-realisations-07.jpg" alt="Fichier Ready to Dev : fiche d'information sur une user story avec spécifications techniques." loading="lazy" decoding="async"><figcaption>Fichier Ready to Dev <span>Fiche d'information et spécifications</span></figcaption></figure>
+</div>
+<div class="cta-row"><a class="btn btn-primary" href="cas03-realisations.html">Toutes les réalisations →</a></div>
+</section>
+
+<!-- 7. CE QUI A ÉTÉ MIS EN PLACE -->
+<section class="sec" id="resultats" aria-labelledby="h-res">
+<div class="sec-head"><p class="k">Ce qui a été mis en place</p><h2 class="title" id="h-res">Trois pratiques pour une production plus réaliste.</h2>
+<p class="lead">À l'issue de la mission, trois pratiques sont en place, alignées avec les développeurs.</p></div>
+<ol class="benef n3 reveal">
+<li><b>01</b><strong>Un circuit de validation avant le développement</strong>Design review, tech review et partage des fonctionnalités en amont du refinement.</li>
+<li><b>02</b><strong>Une documentation qui intègre l'accessibilité</strong>Les règles HTML (éléments, rôles, attributs) et les recommandations RGAA dans la documentation des composants.</li>
+<li><b>03</b><strong>Un process commun aux designers</strong>Un process de travail en 5 étapes, partagé par les designers des 5 outils.</li>
+</ol>
+
+<h3 class="sub">Ce que j'ai appris</h3>
+<div class="learn reveal">
+<div class="card"><b>01</b><p>Gérer un design system partagé entre 5 designers.</p></div>
+<div class="card"><b>02</b><p>Intégrer l'accessibilité numérique (RGAA) dans la conception.</p></div>
+<div class="card"><b>03</b><p>Tester en amont de la production.</p></div>
+</div>
+</section>
+
+<aside class="next reveal">
+<h2>Retour aux trois cas</h2>
+<a class="btn" href="index.html">Voir les projets →</a>
+</aside>
+
+</div>
 </main>
 
-<footer style="border-top: 1px solid #E3E5EA">
-<div style="max-width: 1200px; margin: 0 auto; padding: 36px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px">
-<a href="#top" style="font-size: 15px; color: #3A3F4A">Retour en haut</a>
-<a href="cas03-realisations.html" style="display: flex; flex-direction: column; gap: 4px; text-decoration: none; color: #121419; text-align: right"><span style="font-size: 13px; color: #1E36B0">10</span><span style="font-size: 26px; font-weight: 600">Réalisations →</span></a>
-</div>
+<footer class="site-footer">
+<div class="wrap"><span>Quentin Féret · Portfolio</span><a href="https://www.linkedin.com/in/quentin-feret" target="_blank" rel="noopener">Me contacter sur LinkedIn →</a></div>
 </footer>
 
-</div>
+<script>
+(function(){
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window&&!reduce){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+    els.forEach(function(e){io.observe(e)});
+    var links=[].slice.call(document.querySelectorAll('.snav a'));
+    var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a});
+    var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.remove('on')});map[e.target.id].classList.add('on')}})},{rootMargin:'-30% 0px -60% 0px'});
+    Object.keys(map).forEach(function(id){var s=document.getElementById(id);if(s)so.observe(s)});
+  }else{els.forEach(function(e){e.classList.add('in')})}
+})();
+</script>
 </body>
 </html>

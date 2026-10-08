@@ -1,0 +1,115 @@
+/* Accueil — hero, bandeau de preuves, affiches de cas */
+
+/* ---------- Hero ---------- */
+.hero{padding:clamp(48px,8vw,104px) 0 clamp(56px,7vw,96px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(32px,6vw,80px);align-items:center}
+.hero-copy{display:flex;flex-direction:column;gap:28px}
+.hero-copy .display em{font-style:normal;color:var(--accent)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:4px}
+.hero-meta{font-size:14px;color:var(--ink-3);margin:0}
+
+/* Visuel : le système qui s'assemble (atomes → molécules → modèle de page) */
+.sys{position:relative;width:100%;max-width:520px;justify-self:end}
+.sys-stage{position:relative;padding:20px;border-radius:var(--r-lg)}
+.sys-page{position:absolute;inset:0;border-radius:var(--r-lg);background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow-2);animation:pageIn 700ms var(--ease) 3.1s both}
+.sys-top{position:absolute;left:0;right:0;top:0;height:44px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:8px;padding:0 20px;animation:fadeIn 500ms var(--ease) 3.4s both}
+.sys-top i{display:block;height:8px;border-radius:4px;background:var(--line-strong)}
+.sys-top i:first-child{width:18px;height:18px;border-radius:6px;background:var(--ink)}
+.sys-body{position:relative;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:16px;padding-top:40px}
+.mol{position:relative;border:1.5px dashed transparent;border-radius:var(--r-md);padding:14px;display:flex;flex-direction:column;gap:10px;animation:molIn 600ms var(--ease) both}
+.mol b{position:absolute;top:-9px;left:12px;padding:0 6px;background:var(--surface);font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-ink);opacity:0;animation:fadeIn 400ms var(--ease) both}
+.mol-search{grid-column:1/-1;flex-direction:row;align-items:center;animation-delay:2.0s}
+.mol-search b{animation-delay:2.1s}
+.mol-card{animation-delay:2.2s}
+.mol-card b{animation-delay:2.3s}
+.mol-list{animation-delay:2.4s}
+.mol-list b{animation-delay:2.5s}
+.at{opacity:0;animation:atomIn 500ms var(--ease) both}
+.at-input{flex:1;height:34px;border-radius:9px;border:1px solid var(--line-strong);background:var(--bg);display:flex;align-items:center;padding:0 12px;gap:8px;animation-delay:.3s}
+.at-input i{display:block;width:60%;height:6px;border-radius:3px;background:var(--line-strong)}
+.at-btn{height:34px;padding:0 16px;border-radius:9px;background:var(--accent);display:grid;place-items:center;color:#fff;font-size:12px;font-weight:600}
+.at-search-btn{animation-delay:.5s}
+.at-img{height:76px;border-radius:10px;background:linear-gradient(135deg,var(--c1-soft),var(--accent-soft));animation-delay:.7s}
+.at-line{height:7px;border-radius:4px;background:var(--line-strong)}
+.at-line.s{width:62%}
+.at-t1{animation-delay:.9s}.at-t2{animation-delay:1.0s}
+.at-chip{align-self:flex-start;height:22px;padding:0 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent-ink);font-size:11px;font-weight:600;display:grid;place-items:center;animation-delay:1.15s}
+.at-row{display:flex;align-items:center;gap:10px}
+.at-row .at-line{flex:1}
+.at-toggle{width:28px;height:16px;border-radius:999px;background:var(--line-strong);position:relative;flex:none}
+.at-toggle::after{content:"";position:absolute;top:2px;left:2px;width:12px;height:12px;border-radius:50%;background:#fff}
+.at-toggle.on{background:var(--accent)}
+.at-toggle.on::after{left:14px}
+.at-r4{animation-delay:1.75s}.at-r1{animation-delay:1.3s}.at-r2{animation-delay:1.45s}.at-r3{animation-delay:1.6s}
+
+.sys-steps{display:flex;gap:8px;margin-top:20px;flex-wrap:wrap}
+.sys-steps li{list-style:none;font-size:13px;font-weight:500;color:var(--ink-3);padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:transparent;animation:stepOn 500ms var(--ease) both}
+.sys-steps li:nth-child(1){animation-delay:.3s}
+.sys-steps li:nth-child(2){animation-delay:2.0s}
+.sys-steps li:nth-child(3){animation-delay:3.1s}
+.sys-steps{padding:0;margin-bottom:0}
+
+@keyframes atomIn{from{opacity:0;transform:scale(.86) translateY(6px)}to{opacity:1;transform:none}}
+@keyframes molIn{from{border-color:transparent}to{border-color:rgba(35,64,255,.38)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes pageIn{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:none}}
+@keyframes stepOn{from{opacity:.5}to{opacity:1;color:var(--ink);border-color:var(--ink);background:var(--surface)}}
+/* Sans animation (reduced-motion) : état final visible */
+@media (prefers-reduced-motion:reduce){.at,.mol b,.sys-top,.sys-page{opacity:1}.mol{border-color:rgba(35,64,255,.38)}.sys-steps li{color:var(--ink);border-color:var(--ink);background:var(--surface)}}
+
+/* ---------- Bandeau de preuves ---------- */
+.proof{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface)}
+.proof ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(4,1fr)}
+.proof li{padding:32px 24px;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:4px}
+.proof li:first-child{border-left:0;padding-left:0}
+.proof .num{font-size:clamp(36px,4.4vw,56px);line-height:1;color:var(--ink)}
+.proof .num span{color:var(--accent)}
+.proof p{margin:0;font-size:14px;color:var(--ink-3);max-width:24ch}
+
+/* ---------- Affiches de cas ---------- */
+.cases{padding-top:var(--section)}
+.cases-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px 40px;margin-bottom:48px}
+.cases-head .title{max-width:20ch}
+.cases-head p{margin:0;max-width:44ch;color:var(--ink-3);font-size:15px}
+.posters{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.poster{--t1:var(--c1);--ts:var(--c1-soft);display:flex;flex-direction:column;text-decoration:none;color:var(--ink);background:var(--ts);border-radius:var(--r-lg);overflow:hidden;transition:transform var(--t) var(--ease),box-shadow var(--t)}
+.poster.p2{--t1:var(--c2);--ts:var(--c2-soft)}
+.poster.p3{--t1:var(--c3);--ts:var(--c3-soft)}
+.poster:hover{transform:translateY(-6px);box-shadow:var(--shadow-2);color:var(--ink)}
+.poster-head{display:flex;justify-content:space-between;align-items:baseline;padding:24px 24px 0;font-size:14px}
+.poster-head b{font-weight:700;color:var(--t1);letter-spacing:.02em}
+.poster-head span{color:var(--ink-3)}
+.poster-fig{margin:20px 24px 0;border-radius:var(--r-md);overflow:hidden;background:var(--surface);box-shadow:var(--shadow-1);aspect-ratio:16/10}
+.poster-fig img{width:100%;height:100%;object-fit:cover;object-position:left center;transition:transform 700ms var(--ease)}
+.poster:hover .poster-fig img{transform:scale(1.04)}
+.poster-body{display:flex;flex-direction:column;gap:12px;padding:24px 24px 28px;flex:1}
+.poster h3{margin:0;font-size:26px;line-height:1.15;letter-spacing:-.02em;font-weight:600}
+.poster .kpi{display:flex;flex-direction:column;gap:2px;padding:14px 0;border-top:1px solid rgba(14,15,18,.12);border-bottom:1px solid rgba(14,15,18,.12)}
+.poster .kpi .num{font-size:34px;line-height:1.05;color:var(--t1)}
+.poster .kpi span{font-size:13.5px;color:var(--ink-2)}
+.poster p.desc{margin:0;font-size:15px;line-height:1.5;color:var(--ink-2)}
+.poster .go{margin-top:auto;padding-top:6px;font-weight:600;font-size:15px;color:var(--t1);display:flex;align-items:center;gap:8px}
+.poster .go i{font-style:normal;transition:transform var(--t) var(--ease)}
+.poster:hover .go i{transform:translateX(5px)}
+
+.orient{margin:32px 0 0;font-size:14px;color:var(--ink-3)}
+
+/* ---------- Responsive ---------- */
+@media (max-width:980px){
+  .hero .wrap{grid-template-columns:1fr}
+  .sys{justify-self:start;max-width:560px}
+  .posters{grid-template-columns:1fr}
+  .poster{flex-direction:row;flex-wrap:wrap}
+  .poster-head{width:100%}
+  .poster-fig{flex:1 1 300px;margin:20px 0 0 24px;align-self:flex-start}
+  .poster-body{flex:1 1 300px}
+}
+@media (max-width:720px){
+  .proof ul{grid-template-columns:1fr 1fr}
+  .proof li:nth-child(odd){border-left:0;padding-left:0}
+  .proof li:nth-child(n+3){border-top:1px solid var(--line)}
+  .poster{flex-direction:column;flex-wrap:nowrap}
+  .poster-fig{flex:none;margin:20px 24px 0;align-self:stretch}
+  .poster-body{flex:none}
+  .nav{gap:20px}
+}

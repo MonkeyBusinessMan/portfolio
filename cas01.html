@@ -3,358 +3,259 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SNCF Gares & Connexions — Cas d'étude</title>
-<meta name="description" content="Portfolio de Quentin Féret, Designer UX/UI : trois cas d'étude autour du design system (SNCF Gares &amp; Connexions, Île-de-France Mobilités, Conseil d'État).">
-<meta property="og:title" content="SNCF Gares & Connexions — Cas d'étude">
-<meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%231E36B0%22/%3E%3Ctext x=%2232%22 y=%2242%22 font-family=%22Helvetica,Arial%22 font-size=%2226%22 font-weight=%22700%22 fill=%22white%22 text-anchor=%22middle%22%3EQF%3C/text%3E%3C/svg%3E">
-<style>
-*,*::before,*::after{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-img{max-width:100%}
-body{margin:0;background:#FFFFFF}
-a{color:#1E36B0}a:hover{color:#142680}
-</style>
+<title>SNCF Gares &amp; Connexions — Cas d'étude · Quentin Féret</title>
+<meta name="description" content="Cas d'étude : piloter 16 projets et 5 design systems pour SNCF Gares &amp; Connexions. Le temps de conception passe de 50 % à 10 %.">
+<meta name="theme-color" content="#FAFAF8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%230E0F12%22/%3E%3Ctext x=%2232%22 y=%2242%22 font-family=%22Helvetica,Arial%22 font-size=%2226%22 font-weight=%22700%22 fill=%22white%22 text-anchor=%22middle%22%3EQF%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/inter-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/tokens.css">
+<link rel="stylesheet" href="assets/case.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
-<body>
-<div style="background: #FFFFFF; color: #121419; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 17px; line-height: 1.6; min-height: 100vh">
+<body class="t1">
+<a class="skip" href="#contenu">Aller au contenu</a>
 
-<!-- En-tête -->
-<header style="border-bottom: 1px solid #E3E5EA">
-<div style="max-width: 1200px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px">
-<a href="index.html" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 600; font-size: 18px; color: #121419; text-decoration: none">Quentin Féret <span style="font-weight: 400; color: #5A5F6B">— Designer UX/UI</span></a>
-<nav aria-label="Navigation principale" style="display: flex; gap: 28px; font-size: 15px">
-<a href="index.html" style="color: #121419; text-decoration: none">Projets</a>
-<a href="apropos.html" style="color: #121419; text-decoration: none">À propos</a>
-<a href="https://www.linkedin.com/in/quentin-feret" target="_blank" rel="noopener" style="color: #121419; text-decoration: none">Contact</a>
+<header class="site-header">
+<div class="wrap">
+<a class="brand" href="index.html"><span class="mono" aria-hidden="true">QF</span><span>Quentin Féret <small>— Designer UX/UI</small></span></a>
+<nav class="nav" aria-label="Navigation principale">
+<a href="index.html" aria-current="page">Projets</a>
+<a href="apropos.html">À propos</a>
+<a href="https://www.linkedin.com/in/quentin-feret" target="_blank" rel="noopener">Contact</a>
 </nav>
 </div>
 </header>
 
-<!-- Hero -->
-<section id="top" style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 40px; display: flex; flex-direction: column; gap: 28px">
-<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px">
-<span style="color: #1E36B0; font-weight: 500">Cas d'étude 01</span>
-<span style="color: #5A5F6B">UX/UI × Design system</span>
+<main id="contenu">
+
+<!-- 1. EN-TÊTE -->
+<section class="ch" aria-labelledby="h1">
+<div class="wrap">
+<p class="crumb"><a href="index.html">Projets</a> / Cas d'étude 01</p>
+<div class="ch-top">
+<div>
+<p class="eyebrow" style="margin-bottom:16px">UX/UI × Design system</p>
+<h1 class="display" id="h1">SNCF Gares &amp; Connexions</h1>
+<p class="lead">Piloter 16 projets avec 6 designers, grâce à un outil de pilotage que j'ai conçu, pour livrer les évolutions de 5 design systems.</p>
+<ul class="tags"><li>Dette graphique</li><li>Transversalité</li><li>Multiplateforme</li></ul>
 </div>
-<h1 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 600; font-size: clamp(40px, 6vw, 76px); line-height: 1.04; letter-spacing: -0.02em; max-width: 960px">SNCF Gares &amp; Connexions</h1>
-<p style="margin: 0; font-size: 21px; line-height: 1.5; color: #3A3F4A; max-width: 760px">Construction de produits digitaux à destination des agents et des voyageurs en gare.</p>
-<ul aria-label="Taxonomie du projet" style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px">
-<li style="padding: 6px 14px; border: 1px solid #1E36B0; border-radius: 999px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; color: #1E36B0">Dette graphique</li>
-<li style="padding: 6px 14px; border: 1px solid #1E36B0; border-radius: 999px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; color: #1E36B0">Transversalité</li>
-<li style="padding: 6px 14px; border: 1px solid #1E36B0; border-radius: 999px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; color: #1E36B0">Multiplateforme</li>
-</ul>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 24px; padding-top: 28px; border-top: 1px solid #E3E5EA; margin-top: 12px">
-<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; color: #5A5F6B">Client</span><span style="font-weight: 500">SNCF Gares &amp; Connexions</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; color: #5A5F6B">Rôle</span><span style="font-weight: 500">Designer UX/UI</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; color: #5A5F6B">Période</span><span style="font-weight: 500">Mai 2025 – sept. 2026</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; color: #5A5F6B">Équipe</span><span style="font-weight: 500">6 designers</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; color: #5A5F6B">Outils</span><span style="font-weight: 500">Figma, Claude, Figma Agent</span></div>
+<aside class="kpi-hero" aria-label="Résultat clé">
+<span class="label">Résultat clé</span>
+<span class="big num">50 → 10&nbsp;%</span>
+<p>du temps consacré à la conception : il est réinvesti dans le cadrage, la recherche, les tests et la maintenance.</p>
+</aside>
+</div>
+<dl class="meta">
+<div><dt>Client</dt><dd>SNCF Gares &amp; Connexions</dd></div>
+<div><dt>Rôle</dt><dd>Designer UX/UI</dd></div>
+<div><dt>Période</dt><dd>Mai 2025 – sept. 2026</dd></div>
+<div><dt>Équipe</dt><dd>6 designers</dd></div>
+<div><dt>Outils</dt><dd>Figma, Claude, Figma Agent</dd></div>
+</dl>
+<div class="cover"><img src="assets/index-01.jpg" alt="Aperçu du design system SNCF Gares &amp; Connexions : boutons, calendrier, champs de formulaire." width="2400" height="1350"></div>
 </div>
 </section>
 
-<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px">
-<img src="assets/index-01.jpg" alt="Design system SNCF Gares &amp; Connexions — Applications, écrans et site, V1.0 : aperçu des composants (boutons, calendrier, champs de formulaire, cartes, toast, interrupteurs)" style="width: 100%; height: auto; display: block; border-radius: 16px">
-</div>
-
-<!-- Sommaire -->
-<nav aria-label="Sommaire du cas d'étude" style="max-width: 1200px; margin: 0 auto; padding: 40px 24px 8px">
-<div style="display: flex; flex-wrap: wrap; gap: 10px">
-<a href="#contexte" style="padding: 10px 16px; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 14px; color: #121419; text-decoration: none">01 Contexte</a>
-<a href="#perimetre" style="padding: 10px 16px; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 14px; color: #121419; text-decoration: none">02 Périmètre</a>
-<a href="#constat" style="padding: 10px 16px; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 14px; color: #121419; text-decoration: none">03 Constat</a>
-<a href="#problemes" style="padding: 10px 16px; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 14px; color: #121419; text-decoration: none">04 Problèmes</a>
-<a href="#enjeux" style="padding: 10px 16px; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 14px; color: #121419; text-decoration: none">05 Enjeux</a>
-<a href="#solution" style="padding: 10px 16px; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 14px; color: #121419; text-decoration: none">06 Solution</a>
-<a href="#objectifs" style="padding: 10px 16px; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 14px; color: #121419; text-decoration: none">07 Objectifs</a>
-<a href="#travail" style="padding: 10px 16px; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 14px; color: #121419; text-decoration: none">08 Travail effectué</a>
-<a href="#resultats" style="padding: 10px 16px; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 14px; color: #121419; text-decoration: none">09 Résultats</a>
-<a href="cas01-realisations.html" style="padding: 10px 16px; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 14px; color: #121419; text-decoration: none">10 Réalisations</a>
-</div>
+<nav class="snav" aria-label="Sommaire du cas">
+<ul>
+<li><a href="#tldr"><b>01</b>En bref</a></li>
+<li><a href="#contexte"><b>02</b>Contexte &amp; enjeu</a></li>
+<li><a href="#demarche"><b>03</b>Démarche</a></li>
+<li><a href="#decisions"><b>04</b>Décisions clés</a></li>
+<li><a href="#realisations"><b>05</b>Réalisations</a></li>
+<li><a href="#resultats"><b>06</b>Résultats &amp; impact</a></li>
+</ul>
 </nav>
 
-<main style="max-width: 1200px; margin: 0 auto; padding: 0 24px 40px">
+<div class="wrap">
 
-<!-- 01 Contexte -->
-<section id="contexte" style="display: flex; flex-wrap: wrap; gap: 40px; padding: 28px 0; border-top: 1px solid #E3E5EA">
-<div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 8px">
-<span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; color: #1E36B0">01</span>
-<h2 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 600; font-size: 34px; line-height: 1.1">Contexte</h2>
-</div>
-<div style="flex: 3 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<p style="margin: 0; font-size: 20px; line-height: 1.55">Designer au sein du Studio Design, mon intervention était transverse : intervenir sur différents produits de Gares &amp; Connexions. Pour ce faire, j'ai contribué à la structuration et à l'évolution des design systems destinés à plusieurs produits numériques de l'écosystème ferroviaire.</p>
-<p style="margin: 0; color: #3A3F4A">Côté SNCF, certains produits existants continuent de s'améliorer, tandis que d'autres connaissent une refonte technologique et graphique. La structuration des design systems a permis de rapprocher les pratiques de conception entre les produits, de faciliter la réutilisation des éléments communs et d'installer une démarche de production plus itérative.</p>
+<!-- 2. TL;DR -->
+<section class="sec" id="tldr" aria-labelledby="h-tldr" style="padding-top:64px">
+<div class="sec-head"><p class="k">En bref</p><h2 class="title" id="h-tldr">Le problème, ma décision, l'effet.</h2></div>
+<div class="tldr reveal">
+<div><h3>Problème</h3><p>Cinq design systems lacunaires, une seule documentation, un an d'écart entre les maquettes et la production.</p></div>
+<div><h3>Décision</h3><p>Un socle commun, une gouvernance partagée et un pilotage des demandes selon la charge des designers.</p></div>
+<div><h3>Effet</h3><p>La conception passe de 50&nbsp;% à 10&nbsp;% du temps, les tests de 0&nbsp;% à 30&nbsp;%.</p></div>
 </div>
 </section>
 
-<!-- 02 Périmètre -->
-<section id="perimetre" style="display: flex; flex-wrap: wrap; gap: 40px; padding: 28px 0; border-top: 1px solid #E3E5EA">
-<div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 8px">
-<span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; color: #1E36B0">02</span>
-<h2 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 600; font-size: 34px; line-height: 1.1">Périmètre</h2>
+<!-- 3. CONTEXTE & ENJEU -->
+<section class="sec" id="contexte" aria-labelledby="h-ctx">
+<div class="sec-head"><p class="k">Contexte &amp; enjeu</p><h2 class="title" id="h-ctx">Une même évolution, plusieurs produits à synchroniser.</h2></div>
+<div class="prose reveal">
+<p>Designer au sein du Studio Design, mon intervention était transverse : intervenir sur différents produits de Gares &amp; Connexions. J'ai contribué à la structuration et à l'évolution des design systems destinés à plusieurs produits numériques de l'écosystème ferroviaire.</p>
+<p>Côté SNCF, certains produits existants continuent de s'améliorer, tandis que d'autres connaissent une refonte technologique et graphique. La structuration des design systems a permis de rapprocher les pratiques de conception, de faciliter la réutilisation des éléments communs et d'installer une démarche de production plus itérative.</p>
 </div>
-<div style="flex: 3 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<p style="margin: 0; font-size: 13px; color: #5A5F6B">Sur <strong style="color: #121419">3 familles de supports</strong> · 11 produits</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px">
-<div style="padding: 24px; background: #F6F7F9; border-radius: 12px; display: flex; flex-direction: column; gap: 14px">
-<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; color: #1E36B0">Android · iOS · Web</span><h3 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 600">Application voyageurs</h3></div>
-<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px">
-<li style="display: flex; flex-direction: column"><span style="font-weight: 600">MaGare</span></li>
-</ul>
+
+<h3 class="sub">Périmètre — 3 familles de supports · 11 produits · Android · iOS · Web</h3>
+<div class="scope reveal">
+<div class="card"><h4>Application voyageurs</h4><ul><li>MaGare</li><li>Écrans en gare</li></ul></div>
+<div class="card"><h4>Information voyageurs</h4><ul><li>Live Socle — Grandes lignes</li><li>Live MaasTransit — Transports en commun</li><li>Live Multimodal — Transports alternatifs</li><li>Postes agents</li></ul></div>
+<div class="card"><h4>7 outils métier</h4><ul><li>Outil A à Outil F</li><li>Portail applicatif</li></ul><p class="hint">Les noms des outils internes ont été anonymisés.</p></div>
 </div>
-<div style="padding: 24px; background: #F6F7F9; border-radius: 12px; display: flex; flex-direction: column; gap: 14px">
-<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; color: #1E36B0">Écrans en gare</span><h3 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 600">Information voyageurs</h3></div>
-<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px">
-<li style="display: flex; flex-direction: column"><span style="font-weight: 600">Live Socle</span><span style="font-size: 15px; color: #3A3F4A">Grandes lignes</span></li>
-<li style="display: flex; flex-direction: column"><span style="font-weight: 600">Live MaasTransit</span><span style="font-size: 15px; color: #3A3F4A">Transports en commun</span></li>
-<li style="display: flex; flex-direction: column"><span style="font-weight: 600">Live Multimodal</span><span style="font-size: 15px; color: #3A3F4A">Transports alternatifs</span></li>
-</ul>
-</div>
-<div style="padding: 24px; background: #F6F7F9; border-radius: 12px; display: flex; flex-direction: column; gap: 14px">
-<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; color: #1E36B0">Postes agents</span><h3 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 600">7 outils métier</h3></div>
-<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px">
-<li style="padding: 4px 12px; background: #FFFFFF; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 15px">Outil A</li>
-<li style="padding: 4px 12px; background: #FFFFFF; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 15px">Outil B</li>
-<li style="padding: 4px 12px; background: #FFFFFF; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 15px">Outil C</li>
-<li style="padding: 4px 12px; background: #FFFFFF; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 15px">Outil D</li>
-<li style="padding: 4px 12px; background: #FFFFFF; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 15px">Outil E</li>
-<li style="padding: 4px 12px; background: #FFFFFF; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 15px">Outil F</li>
-<li style="padding: 4px 12px; background: #FFFFFF; border: 1px solid #D6D9E0; border-radius: 999px; font-size: 15px">Portail applicatif</li>
-</ul>
-<p style="margin: 0; font-size: 15px; color: #3A3F4A">Des outils qui ont chacun un rôle dans l'activité de la gare.</p>
-<p style="margin: 0; font-size: 13px; color: #5A5F6B; font-style: italic">Les noms des outils internes ont été anonymisés.</p>
-</div>
-</div>
-<figure style="margin: 0; display: flex; flex-direction: column; gap: 14px">
-<div style="padding: 24px; background: #EEF1FA; border-radius: 16px">
-<img loading="lazy" decoding="async" src="assets/cas01-01.jpg" alt="Une même évolution, les horaires des trains, déclinée sur cinq produits : l'écran en gare (TGD), l'application MaGare sur iOS et Android, un outil agent web, et le site web Gares &amp; Connexions sur ordinateur et sur mobile" style="width: 100%; height: auto; display: block; border-radius: 10px">
-</div>
-<figcaption style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; color: #1E36B0">Une évolution, plusieurs produits</span><span style="color: #3A3F4A">Une même évolution se décline sur l'écran en gare, l'application MaGare, l'outil agent et le site web : elle impose une transversalité et une synchronisation entre les projets.</span></figcaption>
+<figure class="fig reveal">
+<div class="img"><img src="assets/cas01-01.jpg" alt="Une même évolution déclinée sur l'écran en gare, l'application, l'outil agent et le site web." loading="lazy" decoding="async"></div>
+<figcaption><h4>Une évolution, plusieurs produits</h4><p>Une même évolution se décline sur l'écran en gare, l'application MaGare, l'outil agent et le site web : elle impose une transversalité et une synchronisation entre les projets.</p></figcaption>
 </figure>
+
+<h3 class="sub">Constat — trois faits à mon arrivée</h3>
+<div class="stats3 reveal">
+<div class="stat"><span class="num">1 an</span><h4>Une dette graphique</h4><p>Un an d'écart entre les maquettes et la production.</p></div>
+<div class="stat"><span class="num">&gt; 50&nbsp;%</span><h4>Des design systems lacunaires</h4><p>Les design systems existent, mais plus de la moitié des composants y sont absents.</p></div>
+<div class="stat"><span class="num">1 / 5</span><h4>Une maturité hétérogène</h4><p>Une seule documentation pour cinq design systems, et une seule équipe alignée sur la notion de design system.</p></div>
+</div>
+
+<h3 class="sub">Problèmes identifiés</h3>
+<div class="pb reveal">
+<div class="card"><span class="id">P1 · ORGANISATION</span><p>Aucun socle de fichiers commun d'un projet à l'autre, et une architecture pensée sans tenir compte de ceux qui la lisent.</p></div>
+<div class="card"><span class="id">P2 · ARCHITECTURE</span><p>Des éléments rangés sans logique partagée, difficiles à comprendre et à réutiliser pour les équipes.</p></div>
+<div class="card"><span class="id">P3 · QUALITÉ UX</span><p>Des solutions développées sans avoir été confrontées aux besoins réels des utilisateurs.</p></div>
 </div>
 </section>
 
-<!-- 03 Constat -->
-<section id="constat" style="display: flex; flex-wrap: wrap; gap: 40px; padding: 28px 0; border-top: 1px solid #E3E5EA">
-<div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 8px">
-<span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; color: #1E36B0">03</span>
-<h2 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 600; font-size: 34px; line-height: 1.1">Constat</h2>
-</div>
-<div style="flex: 3 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
-<p style="margin: 0; font-size: 20px; line-height: 1.55">À mon arrivée sur la mission, trois constats se sont imposés.</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
-<div style="padding: 24px; border: 1px solid #E3E5EA; border-radius: 12px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 44px; font-weight: 600; color: #1E36B0; line-height: 1.05">1 an</span><h3 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 600">Une dette graphique</h3><p style="margin: 0; color: #3A3F4A; font-size: 15px">Un an d'écart entre les maquettes et la production.</p></div>
-<div style="padding: 24px; border: 1px solid #E3E5EA; border-radius: 12px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 44px; font-weight: 600; color: #1E36B0; line-height: 1.05">&gt; 50 %</span><h3 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 600">Des design systems lacunaires</h3><p style="margin: 0; color: #3A3F4A; font-size: 15px">Les design systems existent, mais plus de la moitié des composants y sont absents.</p></div>
-<div style="padding: 24px; border: 1px solid #E3E5EA; border-radius: 12px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 44px; font-weight: 600; color: #1E36B0; line-height: 1.05">1 / 5</span><h3 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 600">Une maturité hétérogène</h3><p style="margin: 0; color: #3A3F4A; font-size: 15px">Une seule documentation pour cinq design systems existants, et une seule équipe alignée sur la notion de design system.</p></div>
-</div>
-</div>
-</section>
-
-<!-- 04 Problèmes identifiés -->
-<section id="problemes" style="display: flex; flex-wrap: wrap; gap: 40px; padding: 28px 0; border-top: 1px solid #E3E5EA">
-<div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 8px">
-<span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; color: #1E36B0">04</span>
-<h2 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 600; font-size: 34px; line-height: 1.1">Problèmes identifiés</h2>
-</div>
-<ol style="flex: 3 1 520px; min-width: 0; margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column">
-<li style="display: flex; gap: 24px; padding: 16px 0; border-bottom: 1px solid #E3E5EA"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; color: #5A5F6B; padding-top: 4px">P1</span><div style="display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; font-weight: 600">Organisation</h3><p style="margin: 0; color: #3A3F4A">Aucun socle de fichiers commun d'un projet à l'autre, et une architecture pensée sans tenir compte de ceux qui la lisent.</p></div></li>
-<li style="display: flex; gap: 24px; padding: 16px 0; border-bottom: 1px solid #E3E5EA"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; color: #5A5F6B; padding-top: 4px">P2</span><div style="display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; font-weight: 600">Architecture</h3><p style="margin: 0; color: #3A3F4A">Des éléments rangés sans logique partagée, difficiles à comprendre et à réutiliser pour les équipes.</p></div></li>
-<li style="display: flex; gap: 24px; padding: 16px 0; border-bottom: 1px solid #E3E5EA"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; color: #5A5F6B; padding-top: 4px">P3</span><div style="display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; font-weight: 600">Qualité UX</h3><p style="margin: 0; color: #3A3F4A">Des solutions développées sans avoir été confrontées aux besoins réels des utilisateurs.</p></div></li>
+<!-- 4. DÉMARCHE -->
+<section class="sec" id="demarche" aria-labelledby="h-dem">
+<div class="sec-head"><p class="k">Démarche</p><h2 class="title" id="h-dem">Cinq enjeux, un système qui tient dans la durée.</h2>
+<p class="lead">Contribuer à structurer un design system multiplateforme et multiproduit, et piloter les demandes d'évolution selon la charge des designers.</p></div>
+<ol class="steps reveal">
+<li><h4>Diagnostiquer</h4><p>Identifier ce qui peut être partagé et réutilisé d'une fonctionnalité à l'autre.</p></li>
+<li><h4>Définir la stratégie</h4><p>Structurer les évolutions selon les spécificités du Web, d'Android et d'iOS.</p></li>
+<li><h4>Organiser la contribution</h4><p>Rendre les spécifications fonctionnelles compréhensibles par les équipes techniques.</p></li>
+<li><h4>Accompagner l'adoption</h4><p>Faciliter la réutilisation des éléments communs et installer une production plus itérative.</p></li>
+<li><h4>Piloter l'adoption</h4><p>Piloter la prise en main des nouveaux design systems auprès des parties prenantes.</p></li>
 </ol>
+
+<h3 class="sub">Architecture — un socle, trois systèmes</h3>
+<div class="arch reveal">
+<div class="base"><strong>Fondamentaux communs</strong><span>Couleurs · typographie · espacements · icônes · accessibilité</span></div>
+<div class="row">
+<div class="card"><h4>Applications mobiles <small>1 design system</small></h4><ul><li>Android · iOS</li><li>MaGare</li></ul></div>
+<div class="card"><h4>Applications web <small>1 design system</small></h4><ul><li>Navigateur</li><li>Outils des agents en gare</li></ul></div>
+<div class="card"><h4>Écrans en gare <small>1 design system</small></h4><ul><li>Live Socle</li><li>Live MaasTransit</li><li>Live Multimodal</li></ul></div>
+</div>
+</div>
+<div class="vol reveal" role="group" aria-label="Volumétrie du design system">
+<div><span class="num">5</span><p>design systems à gérer</p></div>
+<div><span class="num">~80</span><p>composants atomes par design system</p></div>
+<div><span class="num">~40</span><p>composants molécules par design system</p></div>
+<div><span class="num">~80</span><p>modèles de pages par design system</p></div>
+<div><span class="num">Oui</span><p>design tokens : couleurs, mockups, langues et responsive</p></div>
+</div>
 </section>
 
-<!-- 05 Enjeux -->
-<section id="enjeux" style="display: flex; flex-wrap: wrap; gap: 40px; padding: 28px 0; border-top: 1px solid #E3E5EA">
-<div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 8px">
-<span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; color: #1E36B0">05</span>
-<h2 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 600; font-size: 34px; line-height: 1.1">Enjeux</h2>
+<!-- 5. DÉCISIONS CLÉS -->
+<section class="sec" id="decisions" aria-labelledby="h-dec">
+<div class="sec-head"><p class="k">Décisions clés</p><h2 class="title" id="h-dec">Quatre décisions qui ont changé la façon de produire.</h2>
+<p class="lead">Chaque décision répond à un constat précis et se traduit par un effet observable.</p></div>
+<div class="decs">
+<article class="dec reveal"><header><b>D1</b><h3>Une gouvernance commune et flexible</h3></header>
+<dl>
+<div><dt>Constat</dt><dd>Aucun socle de fichiers commun, une seule documentation pour cinq systèmes.</dd></div>
+<div><dt>Décision</dt><dd>Une organisation commune adaptée aux contraintes de chaque équipe, et une logique unique : fondations, atomes, blocs fonctionnels, modèles de page.</dd></div>
+<div><dt>Effet</dt><dd class="eff"><span>Plus itératif</span>un cycle de production plus rapide et une réutilisation facilitée.</dd></div>
+</dl></article>
+<article class="dec reveal" data-d="1"><header><b>D2</b><h3>Piloter selon la charge des designers</h3></header>
+<dl>
+<div><dt>Constat</dt><dd>16 projets à livrer en parallèle sur 5 design systems, avec 6 designers.</dd></div>
+<div><dt>Décision</dt><dd>Un tableau de pilotage conçu pour prioriser les demandes d'évolution selon la charge, et un partage hebdomadaire de l'avancement avec le management.</dd></div>
+<div><dt>Effet</dt><dd class="eff"><span>16 projets</span>pilotés avec 6 designers, sur 5 design systems.</dd></div>
+</dl></article>
+<article class="dec reveal"><header><b>D3</b><h3>Confronter les solutions aux utilisateurs avant le développement</h3></header>
+<dl>
+<div><dt>Constat</dt><dd>Des solutions développées sans avoir été confrontées aux besoins réels.</dd></div>
+<div><dt>Décision</dt><dd>Une stratégie de tests utilisateurs en amont, et une recherche diffusée dès la conception.</dd></div>
+<div><dt>Effet</dt><dd class="eff"><span>0 → 30 %</span>du temps consacré aux tests.</dd></div>
+</dl></article>
+<article class="dec reveal" data-d="1"><header><b>D4</b><h3>Fiabiliser le handoff, avec l'aide de l'IA</h3></header>
+<dl>
+<div><dt>Constat</dt><dd>Un an d'écart entre les maquettes et la production.</dd></div>
+<div><dt>Décision</dt><dd>Des templates de livraison, des fichiers Figma structurés par projet, une documentation de composants rédigée avec l'IA sous la supervision d'un designer, et un Storybook pour les équipes.</dd></div>
+<div><dt>Effet</dt><dd class="eff"><span>30 → 5 %</span>du temps consacré à la livraison.</dd></div>
+</dl></article>
 </div>
-<ol style="flex: 3 1 520px; min-width: 0; margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
-<li style="padding: 28px 24px; border-top: 3px solid #1E36B0; background: #F6F7F9; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; color: #1E36B0">E1</span><h3 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 600">Diagnostiquer</h3><p style="margin: 0; color: #3A3F4A">Identifier ce qui peut être partagé et réutilisé d'une fonctionnalité à l'autre.</p></li>
-<li style="padding: 28px 24px; border-top: 3px solid #1E36B0; background: #F6F7F9; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; color: #1E36B0">E2</span><h3 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 600">Définir la stratégie</h3><p style="margin: 0; color: #3A3F4A">Structurer les évolutions en tenant compte des spécificités du Web, d'Android et d'iOS.</p></li>
-<li style="padding: 28px 24px; border-top: 3px solid #1E36B0; background: #F6F7F9; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; color: #1E36B0">E3</span><h3 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 600">Organiser la contribution</h3><p style="margin: 0; color: #3A3F4A">Rendre les spécifications fonctionnelles compréhensibles par les équipes techniques.</p></li>
-<li style="padding: 28px 24px; border-top: 3px solid #1E36B0; background: #F6F7F9; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; color: #1E36B0">E4</span><h3 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 600">Accompagner l'adoption</h3><p style="margin: 0; color: #3A3F4A">Faciliter la réutilisation des éléments communs et installer une démarche de production plus itérative.</p></li>
-<li style="padding: 28px 24px; border-top: 3px solid #1E36B0; background: #F6F7F9; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; color: #1E36B0">E5</span><h3 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 600">Piloter l'adoption</h3><p style="margin: 0; color: #3A3F4A">Piloter la prise en main des nouveaux design systems et encourager leur utilisation par les différentes parties prenantes.</p></li>
+
+<h3 class="sub">Le travail de fond derrière ces décisions</h3>
+<div class="more reveal">
+<div class="card"><h4>Gouvernance &amp; évangélisation</h4><ul><li>Sensibilisation à l'accessibilité (RGAA, RAAM, audits), produit par produit</li><li>Process de livraison entre chefs de projet, designers et développeurs</li><li>Cérémonies dédiées aux échanges</li></ul></div>
+<div class="card"><h4>Bibliothèques de composants</h4><ul><li>Analyse de la logique, des états et des variantes</li><li>Nomenclature de nommage</li><li>Revues avant chaque montée de version, grille de tests avant publication</li></ul></div>
+<div class="card"><h4>Documentation &amp; contribution</h4><ul><li>Support pour les testeurs et les chefs de projet</li><li>Processus de contribution entre designers, développeurs et chefs de projet</li><li>Tableau de pilotage de l'avancement des design systems</li></ul></div>
+</div>
+</section>
+
+<!-- 6. RÉALISATIONS -->
+<section class="sec" id="realisations" aria-labelledby="h-real">
+<div class="sec-head"><p class="k">Réalisations</p><h2 class="title" id="h-real">Avant, aujourd'hui.</h2>
+<p class="lead">Les mêmes écrans, avant et après la mise en place du design system.</p></div>
+<div class="shots">
+<figure class="shot reveal"><img src="assets/cas01-produits-02.jpg" alt="Écran en gare : affichage des départs avant et aujourd'hui." loading="lazy" decoding="async"><figcaption>Écran en gare <span>Avant / Aujourd'hui</span></figcaption></figure>
+<figure class="shot reveal"><img src="assets/cas01-produits-05.jpg" alt="Application voyageurs : horaires avant et aujourd'hui." loading="lazy" decoding="async"><figcaption>Application voyageurs <span>Avant / Aujourd'hui</span></figcaption></figure>
+</div>
+<div class="cta-row"><a class="btn btn-primary" href="cas01-realisations.html">Toutes les réalisations →</a><a class="btn btn-ghost" href="cas01-produits.html">Voir les produits</a></div>
+</section>
+
+<!-- 7. RÉSULTATS -->
+<section class="sec" id="resultats" aria-labelledby="h-res">
+<div class="sec-head"><p class="k">Résultats &amp; impact</p><h2 class="title" id="h-res">La conception n'est plus le goulot d'étranglement.</h2>
+<p class="lead">Le temps libéré sur la conception et la livraison est réinvesti dans le cadrage, la recherche, les tests et la maintenance.</p></div>
+<div class="ba reveal" role="group" aria-label="Répartition du temps par phase, avant et aujourd'hui">
+<div class="row"><span>Avant<small>ancienne organisation</small></span>
+<div class="bar"><i class="p-cad" style="width:15%">15&nbsp;%</i><i class="p-rec" style="width:5%"></i><i class="p-con" style="width:50%">50&nbsp;%</i><i class="p-liv" style="width:30%">30&nbsp;%</i></div></div>
+<div class="row"><span>Aujourd'hui<small>nouvelle organisation</small></span>
+<div class="bar"><i class="p-cad" style="width:30%">30&nbsp;%</i><i class="p-rec" style="width:15%">15&nbsp;%</i><i class="p-con" style="width:10%">10&nbsp;%</i><i class="p-tes" style="width:30%">30&nbsp;%</i><i class="p-liv" style="width:5%"></i><i class="p-mai" style="width:10%">10&nbsp;%</i></div></div>
+<ul class="legend"><li><i class="p-cad"></i>Cadrer</li><li><i class="p-rec"></i>Rechercher</li><li><i class="p-con"></i>Concevoir</li><li><i class="p-tes"></i>Tester</li><li><i class="p-liv"></i>Livrer</li><li><i class="p-mai"></i>Maintenir</li></ul>
+</div>
+<div class="deltas reveal" aria-label="Évolution par phase">
+<div><span>Cadrer</span><b>15 → 30 %</b></div>
+<div><span>Rechercher</span><b>5 → 15 %</b></div>
+<div class="hl"><span>Concevoir</span><b>50 → 10 %</b></div>
+<div><span>Tester</span><b>0 → 30 %</b></div>
+<div class="hl"><span>Livrer</span><b>30 → 5 %</b></div>
+<div><span>Maintenir</span><b>0 → 10 %</b></div>
+</div>
+
+<h3 class="sub">Les bénéfices identifiés</h3>
+<ol class="benef reveal">
+<li><b>01</b>Une production de livrables de conception plus rapide</li>
+<li><b>02</b>Un cycle de production plus itératif</li>
+<li><b>03</b>Une vision UX plus partagée entre les produits</li>
+<li><b>04</b>Une standardisation des pratiques de conception</li>
+<li><b>05</b>Une diffusion plus large de la démarche UX</li>
 </ol>
-</section>
+<p class="prose" style="margin-top:32px">Ces résultats traduisent l'intérêt d'un système de conception organisé : les ressources communes facilitent la réutilisation, tandis que les règles partagées contribuent à rendre les interfaces plus cohérentes.</p>
 
-<!-- 06 Solution -->
-<section id="solution" style="display: flex; flex-wrap: wrap; gap: 40px; padding: 28px 0; border-top: 1px solid #E3E5EA">
-<div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 8px">
-<span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; color: #1E36B0">06</span>
-<h2 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 600; font-size: 34px; line-height: 1.1">Solution</h2>
-</div>
-<div style="flex: 3 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
-<p style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 28px; line-height: 1.3; font-weight: 500">Contribuer à structurer un design system multiplateforme et multiproduit, destiné à l'ensemble des produits de l'écosystème ferroviaire.</p>
-<p style="margin: 0; color: #3A3F4A">Piloter les demandes d'évolution grâce à une priorisation des tâches selon la charge des designers.</p>
-<figure style="margin: 0; background: #EEF1FA; border-radius: 16px; overflow-x: auto" aria-label="Schéma : des fondamentaux communs déclinés en trois design systems, pour les applications mobiles, les applications web et les écrans d'affichage en gare"><div style="min-width: 600px; box-sizing: border-box; padding: 32px 24px; display: flex; flex-direction: column; align-items: center">
-<div style="box-sizing: border-box; max-width: 420px; width: 100%; padding: 18px 22px; background: #1E36B0; color: #FFFFFF; border-radius: 14px; display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center">
-<span style="font-size: 13px; color: #DCE1F5">Projet transverse</span>
-<span style="font-size: 20px; font-weight: 600; line-height: 1.25">Fondamentaux communs</span>
-<span style="font-size: 14px; color: #DCE1F5">Couleurs, typographie, espacements, icônes, accessibilité</span>
-</div>
-<div style="width: 2px; height: 28px; background: #1E36B0"></div>
-<div style="position: relative; width: 100%; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px">
-<div style="position: absolute; top: 0; left: calc(100% / 6); right: calc(100% / 6); height: 2px; background: #1E36B0"></div>
-<div style="display: flex; flex-direction: column; align-items: center">
-<div style="width: 2px; height: 28px; background: #1E36B0"></div>
-<div style="width: 100%; box-sizing: border-box; padding: 20px; background: #FFFFFF; border: 1px solid #D6D9E0; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
-<div style="width: 44px; height: 44px; border-radius: 10px; background: #EEF1FA; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1E36B0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"></rect><line x1="11" y1="18" x2="13" y2="18"></line></svg></div>
-<span style="font-size: 13px; color: #1E36B0; font-weight: 500">1 design system</span>
-<span style="font-size: 18px; font-weight: 600; line-height: 1.25; color: #121419">Applications mobiles</span>
-<span style="font-size: 14px; color: #5A5F6B">Android · iOS</span>
-<ul style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px"><li style="padding: 3px 10px; background: #F6F7F9; border-radius: 999px; font-size: 13px; color: #121419">MaGare</li></ul>
-</div>
-</div>
-<div style="display: flex; flex-direction: column; align-items: center">
-<div style="width: 2px; height: 28px; background: #1E36B0"></div>
-<div style="width: 100%; box-sizing: border-box; padding: 20px; background: #FFFFFF; border: 1px solid #D6D9E0; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
-<div style="width: 44px; height: 44px; border-radius: 10px; background: #EEF1FA; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1E36B0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"></rect><line x1="2" y1="9" x2="22" y2="9"></line><line x1="5" y1="6.5" x2="5.01" y2="6.5"></line><line x1="8" y1="6.5" x2="8.01" y2="6.5"></line></svg></div>
-<span style="font-size: 13px; color: #1E36B0; font-weight: 500">1 design system</span>
-<span style="font-size: 18px; font-weight: 600; line-height: 1.25; color: #121419">Applications web</span>
-<span style="font-size: 14px; color: #5A5F6B">Navigateur</span>
-<ul style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px"><li style="padding: 3px 10px; background: #F6F7F9; border-radius: 999px; font-size: 13px; color: #121419">Outils des agents en gare</li></ul>
-</div>
-</div>
-<div style="display: flex; flex-direction: column; align-items: center">
-<div style="width: 2px; height: 28px; background: #1E36B0"></div>
-<div style="width: 100%; box-sizing: border-box; padding: 20px; background: #FFFFFF; border: 1px solid #D6D9E0; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
-<div style="width: 44px; height: 44px; border-radius: 10px; background: #EEF1FA; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1E36B0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="13" rx="2"></rect><line x1="12" y1="16" x2="12" y2="21"></line><line x1="8" y1="21" x2="16" y2="21"></line><line x1="6" y1="8" x2="14" y2="8"></line><line x1="6" y1="11" x2="11" y2="11"></line></svg></div>
-<span style="font-size: 13px; color: #1E36B0; font-weight: 500">1 design system</span>
-<span style="font-size: 18px; font-weight: 600; line-height: 1.25; color: #121419">Écrans d'affichage en gare</span>
-<span style="font-size: 14px; color: #5A5F6B">Information voyageurs</span>
-<ul style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px"><li style="padding: 3px 10px; background: #F6F7F9; border-radius: 999px; font-size: 13px; color: #121419">Live Socle</li><li style="padding: 3px 10px; background: #F6F7F9; border-radius: 999px; font-size: 13px; color: #121419">Live MaasTransit</li><li style="padding: 3px 10px; background: #F6F7F9; border-radius: 999px; font-size: 13px; color: #121419">Live Multimodal</li></ul>
-</div>
-</div>
-</div>
-</div></figure>
+<h3 class="sub">Ce que j'ai appris</h3>
+<div class="learn reveal">
+<div class="card"><b>01</b><p>Structurer plusieurs design systems avec une architecture de tokens réaliste.</p></div>
+<div class="card"><b>02</b><p>Améliorer les process de travail entre toutes les parties prenantes.</p></div>
+<div class="card"><b>03</b><p>Diffuser la recherche utilisateur en amont de la conception.</p></div>
 </div>
 </section>
 
-<!-- 07 Objectifs -->
-<section id="objectifs" style="display: flex; flex-wrap: wrap; gap: 40px; padding: 28px 0; border-top: 1px solid #E3E5EA">
-<div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 8px">
-<span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; color: #1E36B0">07</span>
-<h2 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 600; font-size: 34px; line-height: 1.1">Objectifs</h2>
-</div>
-<ul style="flex: 3 1 520px; min-width: 0; margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
-<li style="padding: 24px; border: 1px solid #E3E5EA; border-radius: 12px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; color: #1E36B0">Objectif 1</span><h3 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 600">Favoriser la vision UX</h3><p style="margin: 0; color: #3A3F4A; font-size: 15px">Alléger la charge de maquettage pour se concentrer sur l'expérience utilisateur, en intégrant une démarche de recherche utilisateur.</p></li>
-<li style="padding: 24px; border: 1px solid #E3E5EA; border-radius: 12px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; color: #1E36B0">Objectif 2</span><h3 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 600">Standardiser les pratiques de conception</h3><p style="margin: 0; color: #3A3F4A; font-size: 15px">Sensibiliser chaque acteur de la conception aux techniques de conception dans Figma.</p></li>
-<li style="padding: 24px; border: 1px solid #E3E5EA; border-radius: 12px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; color: #1E36B0">Objectif 3</span><h3 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 600">Faciliter la production d'interfaces cohérentes</h3><p style="margin: 0; color: #3A3F4A; font-size: 15px">Centraliser et tenir à jour les modèles de pages et les composants, et communiquer sur leurs évolutions afin de coordonner une feuille de route.</p></li>
-</ul>
-</section>
+<aside class="next reveal">
+<h2>Cas suivant : Île-de-France Mobilités</h2>
+<a class="btn" href="cas02-resume.html">Découvrir le cas →</a>
+</aside>
 
-<!-- 08 Travail effectué -->
-<section id="travail" style="display: flex; flex-wrap: wrap; gap: 40px; padding: 28px 0; border-top: 1px solid #E3E5EA">
-<div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 8px">
-<span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; color: #1E36B0">08</span>
-<h2 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 600; font-size: 34px; line-height: 1.1">Travail effectué</h2>
 </div>
-<div style="flex: 3 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
-<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column">
-<li style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 14px 0; border-bottom: 1px solid #E3E5EA"><h3 style="flex: 0 0 200px; margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 500; line-height: 1.5; color: #1E36B0; padding-top: 3px">Gouvernance</h3><ul style="flex: 1 1 280px; margin: 0; padding-left: 18px; color: #3A3F4A; display: flex; flex-direction: column; gap: 6px"><li>Mise en place d'une organisation commune et flexible, adaptée aux contraintes de chaque équipe.</li></ul></li>
-<li style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 14px 0; border-bottom: 1px solid #E3E5EA"><h3 style="flex: 0 0 200px; margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 500; line-height: 1.5; color: #1E36B0; padding-top: 3px">Évangélisation</h3><ul style="flex: 1 1 280px; margin: 0; padding-left: 18px; color: #3A3F4A; display: flex; flex-direction: column; gap: 6px"><li>Sensibilisation aux recommandations d'accessibilité, produit par produit.</li><li>Prise en compte des recommandations du RGAA, du RAAM et des audits d'accessibilité sur les fonctionnalités en cours de développement.</li><li>Construction des process de livraison entre chefs de projet et designers.</li><li>Construction des process de livraison entre designers et développeurs.</li><li>Création de cérémonies dédiées aux échanges.</li></ul></li>
-<li style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 14px 0; border-bottom: 1px solid #E3E5EA"><h3 style="flex: 0 0 200px; margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 500; line-height: 1.5; color: #1E36B0; padding-top: 3px">Bibliothèques de composants</h3><ul style="flex: 1 1 280px; margin: 0; padding-left: 18px; color: #3A3F4A; display: flex; flex-direction: column; gap: 6px"><li>Organisation des éléments selon une logique commune : fondations, atomes, blocs fonctionnels et modèles de page.</li><li>Identification des composants et analyse de leur logique, de leurs états et de leurs variantes selon l'usage.</li><li>Définition d'une nomenclature de nommage.</li><li>Cérémonies de revue avant chaque montée de version.</li><li>Mise en place d'une grille de tests avant publication.</li></ul></li>
-<li style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 14px 0; border-bottom: 1px solid #E3E5EA"><h3 style="flex: 0 0 200px; margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 500; line-height: 1.5; color: #1E36B0; padding-top: 3px">Qualité UX</h3><ul style="flex: 1 1 280px; margin: 0; padding-left: 18px; color: #3A3F4A; display: flex; flex-direction: column; gap: 6px"><li>Mise en place d'une stratégie de tests utilisateurs pour confronter les solutions aux besoins réels avant leur développement.</li></ul></li>
-<li style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 14px 0; border-bottom: 1px solid #E3E5EA"><h3 style="flex: 0 0 200px; margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 500; line-height: 1.5; color: #1E36B0; padding-top: 3px">Documentation et handoff</h3><ul style="flex: 1 1 280px; margin: 0; padding-left: 18px; color: #3A3F4A; display: flex; flex-direction: column; gap: 6px"><li>Amélioration des livrables et des informations transmises aux développeurs pour implémenter fidèlement les maquettes, grâce à des templates.</li><li>Création d'un support pour les testeurs et les chefs de projet.</li><li>Structuration des fichiers Figma par projet.</li></ul></li>
-<li style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 14px 0; border-bottom: 1px solid #E3E5EA"><h3 style="flex: 0 0 200px; margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 500; line-height: 1.5; color: #1E36B0; padding-top: 3px">Communication auprès du management</h3><ul style="flex: 1 1 280px; margin: 0; padding-left: 18px; color: #3A3F4A; display: flex; flex-direction: column; gap: 6px"><li>Partage hebdomadaire de l'avancement des projets.</li><li>Tableau de pilotage de l'avancement des design systems.</li><li>Processus de contribution entre designers, développeurs et chefs de projet sur les différents design systems.</li></ul></li>
-<li style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 14px 0; border-bottom: 1px solid #E3E5EA"><h3 style="flex: 0 0 200px; margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 500; line-height: 1.5; color: #1E36B0; padding-top: 3px">Aide de l'IA</h3><ul style="flex: 1 1 280px; margin: 0; padding-left: 18px; color: #3A3F4A; display: flex; flex-direction: column; gap: 6px"><li>Rédaction de la documentation des composants, supervisée par un designer.</li><li>Développement d'un Storybook par le Studio Design pour les équipes.</li></ul></li>
-</ol>
-</div>
-</section>
-
-<!-- 09 Résultats -->
-<section id="resultats" style="display: flex; flex-wrap: wrap; gap: 40px; padding: 28px 0; border-top: 1px solid #E3E5EA">
-<div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 8px">
-<span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; color: #1E36B0">09</span>
-<h2 style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 600; font-size: 34px; line-height: 1.1">Résultats</h2>
-</div>
-<div style="flex: 3 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
-<figure style="margin: 0; display: flex; flex-direction: column; gap: 16px">
-<div style="background: #EEF1FA; border-radius: 16px; overflow-x: auto"><div style="min-width: 560px; box-sizing: border-box; padding: 28px; display: flex; flex-direction: column; gap: 24px" role="img" aria-label="Répartition du temps de travail par étape. Avant : cadrer 15 %, rechercher 5 %, concevoir 50 %, tester 0 %, livrer 30 %, maintenir 0 %. Aujourd'hui : cadrer 30 %, rechercher 15 %, concevoir 10 %, tester 30 %, livrer 5 %, maintenir 10 %.">
-<div style="display: flex; flex-direction: column; gap: 14px">
-<p style="margin: 0; font-size: 16px; color: #3A3F4A"><strong style="color: #121419">Avant</strong> — avec l'ancienne organisation</p>
-<div style="display: flex; gap: 6px; align-items: flex-start">
-<div style="flex: 15 1 0px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
-<div style="height: 64px; background: #121419; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-size: 16px; font-weight: 600">15 %</div>
-<div style="height: 36px; display: flex; justify-content: center"><span style="white-space: nowrap; font-size: 13px; line-height: 1.35; color: #3A3F4A; text-align: center">Cadrer</span></div>
-</div>
-<div style="flex: 5 1 0px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
-<div style="height: 64px; background: #121419; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-size: 16px; font-weight: 600">5 %</div>
-<div style="height: 36px; display: flex; justify-content: center"><span style="white-space: nowrap; font-size: 13px; line-height: 1.35; color: #3A3F4A; text-align: center">Rechercher</span></div>
-</div>
-<div style="flex: 50 1 0px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
-<div style="height: 64px; background: #1E36B0; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-size: 16px; font-weight: 600">50 %</div>
-<div style="height: 36px; display: flex; justify-content: center"><span style="white-space: nowrap; font-size: 13px; line-height: 1.35; color: #3A3F4A; text-align: center">Concevoir</span></div>
-</div>
-<div style="position: relative; flex: 0 0 14px; display: flex; flex-direction: column; gap: 8px">
-<div style="height: 64px; box-sizing: border-box; border: 1.5px dashed #9AA0AD; border-radius: 6px"></div>
-<div style="position: relative; height: 36px"><div style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); white-space: nowrap; text-align: center; font-size: 13px; line-height: 1.35; color: #5A5F6B">Tester<br>0 %</div></div>
-</div>
-<div style="flex: 30 1 0px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
-<div style="height: 64px; background: #121419; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-size: 16px; font-weight: 600">30 %</div>
-<div style="height: 36px; display: flex; justify-content: center"><span style="white-space: nowrap; font-size: 13px; line-height: 1.35; color: #3A3F4A; text-align: center">Livrer</span></div>
-</div>
-<div style="position: relative; flex: 0 0 14px; display: flex; flex-direction: column; gap: 8px">
-<div style="height: 64px; box-sizing: border-box; border: 1.5px dashed #9AA0AD; border-radius: 6px"></div>
-<div style="position: relative; height: 36px"><div style="position: absolute; top: 0; right: 0; white-space: nowrap; text-align: right; font-size: 13px; line-height: 1.35; color: #5A5F6B">Maintenir<br>0 %</div></div>
-</div>
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 14px">
-<p style="margin: 0; font-size: 16px; color: #3A3F4A"><strong style="color: #121419">Aujourd'hui</strong> — avec la nouvelle organisation</p>
-<div style="display: flex; gap: 6px; align-items: flex-start">
-<div style="flex: 30 1 0px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
-<div style="height: 64px; background: #1E36B0; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-size: 16px; font-weight: 600">30 %</div>
-<div style="height: 36px; display: flex; justify-content: center"><span style="white-space: nowrap; font-size: 13px; line-height: 1.35; color: #3A3F4A; text-align: center">Cadrer</span></div>
-</div>
-<div style="flex: 15 1 0px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
-<div style="height: 64px; background: #121419; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-size: 16px; font-weight: 600">15 %</div>
-<div style="height: 36px; display: flex; justify-content: center"><span style="white-space: nowrap; font-size: 13px; line-height: 1.35; color: #3A3F4A; text-align: center">Rechercher</span></div>
-</div>
-<div style="flex: 10 1 0px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
-<div style="height: 64px; background: #121419; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-size: 16px; font-weight: 600">10 %</div>
-<div style="height: 36px; display: flex; justify-content: center"><span style="white-space: nowrap; font-size: 13px; line-height: 1.35; color: #3A3F4A; text-align: center">Concevoir</span></div>
-</div>
-<div style="flex: 30 1 0px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
-<div style="height: 64px; background: #1E36B0; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-size: 16px; font-weight: 600">30 %</div>
-<div style="height: 36px; display: flex; justify-content: center"><span style="white-space: nowrap; font-size: 13px; line-height: 1.35; color: #3A3F4A; text-align: center">Tester</span></div>
-</div>
-<div style="flex: 5 1 0px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
-<div style="height: 64px; background: #121419; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-size: 16px; font-weight: 600">5 %</div>
-<div style="height: 36px; display: flex; justify-content: center"><span style="white-space: nowrap; font-size: 13px; line-height: 1.35; color: #3A3F4A; text-align: center">Livrer</span></div>
-</div>
-<div style="flex: 10 1 0px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
-<div style="height: 64px; background: #121419; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-size: 16px; font-weight: 600">10 %</div>
-<div style="height: 36px; display: flex; justify-content: center"><span style="white-space: nowrap; font-size: 13px; line-height: 1.35; color: #3A3F4A; text-align: center">Maintenir</span></div>
-</div>
-</div>
-</div>
-</div></div>
-<figcaption style="font-size: 16px; color: #3A3F4A">La conception n'est plus le goulot d'étranglement : le temps libéré sur la conception et la livraison est réinvesti dans le cadrage, la recherche, les tests et la maintenance.</figcaption>
-</figure>
-<p style="margin: 0; font-size: 20px; line-height: 1.55">Le travail réalisé autour du design system s'inscrit dans une démarche d'amélioration de la production et de la cohérence des interfaces. Les bénéfices identifiés dans le cadre de la mission :</p>
-<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px">
-<li style="padding: 24px; background: #121419; color: #FFFFFF; border-radius: 12px; display: flex; flex-direction: column; gap: 14px"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; color: #D3D6DD">01</span><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 500; line-height: 1.3">Une production de livrables de conception plus rapide</span></li>
-<li style="padding: 24px; background: #121419; color: #FFFFFF; border-radius: 12px; display: flex; flex-direction: column; gap: 14px"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; color: #D3D6DD">02</span><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 500; line-height: 1.3">Un cycle de production plus itératif</span></li>
-<li style="padding: 24px; color: #FFFFFF; border-radius: 12px; display: flex; flex-direction: column; gap: 14px; background-color: #142680"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; color: #D3D6DD">03</span><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 500; line-height: 1.3">Une vision UX plus partagée entre les produits</span></li>
-<li style="padding: 24px; color: #FFFFFF; border-radius: 12px; display: flex; flex-direction: column; gap: 14px; background-color: #142680"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; color: #D3D6DD">04</span><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 500; line-height: 1.3">Une standardisation des pratiques de conception</span></li>
-<li style="padding: 24px; color: #FFFFFF; border-radius: 12px; display: flex; flex-direction: column; gap: 14px; background-color: #142680"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; color: #D3D6DD">05</span><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 500; line-height: 1.3">Une diffusion plus large de la démarche UX</span></li>
-</ul>
-<p style="margin: 0; color: #3A3F4A">Ces résultats traduisent l'intérêt d'un système de conception organisé : les ressources communes facilitent la réutilisation, tandis que les règles partagées contribuent à rendre les interfaces plus cohérentes.</p>
-</div>
-</section>
-
 </main>
 
-<!-- Suite -->
-<footer style="border-top: 1px solid #E3E5EA">
-<div style="max-width: 1200px; margin: 0 auto; padding: 36px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px">
-<a href="#top" style="font-size: 15px; color: #3A3F4A">Retour en haut</a>
-<a href="cas01-realisations.html" style="display: flex; flex-direction: column; gap: 4px; text-decoration: none; color: #121419; text-align: right"><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; color: #1E36B0">10</span><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 26px; font-weight: 600">Réalisations →</span></a>
-</div>
+<footer class="site-footer">
+<div class="wrap"><span>Quentin Féret · Portfolio</span><a href="https://www.linkedin.com/in/quentin-feret" target="_blank" rel="noopener">Me contacter sur LinkedIn →</a></div>
 </footer>
 
-</div>
+<script>
+(function(){
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window&&!reduce){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+    els.forEach(function(e){io.observe(e)});
+    var links=[].slice.call(document.querySelectorAll('.snav a'));
+    var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a});
+    var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.remove('on')});map[e.target.id].classList.add('on')}})},{rootMargin:'-30% 0px -60% 0px'});
+    Object.keys(map).forEach(function(id){var s=document.getElementById(id);if(s)so.observe(s)});
+  }else{els.forEach(function(e){e.classList.add('in')})}
+})();
+</script>
 </body>
 </html>
