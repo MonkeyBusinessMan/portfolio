@@ -215,3 +215,4 @@ body{--hh:66px}
 
 .benef.n3{grid-template-columns:repeat(3,1fr)}
 @media (max-width:980px){.benef.n3{grid-template-columns:1fr}}
+.kpi-hero .big.sm{font-size:clamp(32px,3.6vw,44px);line-height:1.08}
